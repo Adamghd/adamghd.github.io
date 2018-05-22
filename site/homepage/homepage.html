@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="fonts" href="_fonts/arialli.ttf">
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 699px)" href="mobile.css">
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 700px)" href="desktop.css">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Raleway|Karma|Lato|Open+Sans|Montserrat|Raleway|Karma" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script>
+    // Clock script
+    function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      if (h >= 12) {
+        hh = h - 12;
+        return hh
+      } else h = h;
+
+      if (h === 0) {
+        h = 12;
+      }
+      document.getElementById('txt').innerHTML =
+        hh + ":" + m + ":" + s;
+      var t = setTimeout(startTime, 500);
+    }
+
+    function checkTime(i) {
+      if (i < 10) {
+        i = "0" + i
+      }; // add zero in front of numbers < 10
+      return i;
+    }
+  </script>
+  <script type="text/javascript">
+    function clock() {
+
+      clock();
+
+      function clock() {
+        var now = new Date();
+        var TwentyFourHour = now.getHours();
+        var hour = now.getHours();
+        var min = now.getMinutes();
+        var mid = ' PM';
+        if (min < 10) {
+          min = "0" + min;
+        }
+
+        if (hour > 12) {
+          hour = hour - 12;
+        }
+
+        if (hour == 0) {
+          hour = 12;
+        }
+
+        if (TwentyFourHour < 12) {
+          mid = ' AM';
+        }
+
+        document.getElementById('txt').innerHTML = hour + ':' + min + mid;
+        setTimeout(clock, 1000);
+
+      }
+
+
+
+    }
+  </script>
+
+</head>
+
+<body onload="clock()">
+  <div class="wrapper">
+    <div id="txt"></div>
+    <div class="searchbox">
+      <i class="searchicon fas fa-search fa-1x"></i>
+      <form class="searchform" method="get" action="https://www.google.com/search" target="_blank">
+        <input class="search" type="text" name="q" placeholder="search" autofocus>
+      </form>
+    </div>
+    <div class="wrapper2">
+
+      <div class="item">
+        <a target="_blank" class="transition d2l" href="http://d2l.uwm.edu/?target=%2fd2l%2fhome"><i class="fas fa-clipboard-list"></i>&nbsp;&nbsp;D2L</a>
+      </div>
+
+      <div class="item">
+        <a target="_blank" class="transition reddit" href="https://www.reddit.com/r/all"><i class="fab fa-reddit "></i>&nbsp;&nbsp;Reddit</a>
+      </div>
+
+      <div class="item">
+        <a target="_blank" class="transition twitter " href="https://twitter.com/ "><i class="fab fa-twitter-square "></i>&nbsp;&nbsp;Twitter</a>
+      </div>
+
+      <div class="item">
+        <a target="_blank " class="transition slack " href="https://manfredolsonplaneta.slack.com/messages/C0E46HMA5"><i class="fab fa-slack"></i>&nbsp;&nbsp;Slack</a>
+      </div>
+
+      <div class="item">
+        <a target="_blank" class="transition steam" href="http://steamcommunity.com/sharedfiles/filedetails/?id=709708700"><i class="fab fa-steam"></i>&nbsp;&nbsp;Steam</a>
+      </div>
+
+      <div class="item">
+        <a target="_blank" class="transition gmail" href="https://mail.google.com/mail/u/0/#inbox"><i class="fas fa-envelope-square"></i>&nbsp;&nbsp;Gmail</a>
+      </div>
+
+      <div class="item">
+        <a target="_blank" class="transition outlook" href="https://outlook.office.com/owa/?realm=uwm.edu&exsvurl=1&ll-cc=1033&modurl=0"><i class="fas fa-envelope-square"></i>&nbsp;&nbsp;Outlook</a>
+      </div>
+
+      <div class="item">
+        <a target="_blank" class="transition uwcu" href="https://webbranch.uwcu.org/Auth/Login"><i class="fas fa-university"></i>&nbsp;&nbsp;UWCU</a>
+      </div>
+
+      <div class="item">
+        <a target="_blank" class="transition webclock" href="https://www.hrs.wisconsin.edu/psp/hrs-fd/EMPLOYEE/HRMS/c/ROLE_EMPLOYEE.TL_WEB_CLOCK.GBL?"><i class="fas fa-clock"></i>&nbsp;&nbsp;Timepunch</a>
+      </div>
+
+      <div class="item">
+        <a target="_blank" class="transition planetarium" href="http://uwm.edu/planetarium"><i class="fas fa-space-shuttle"></i>&nbsp;&nbsp;Planetarium</a>
+      </div>
+
+      <div class="item">
+        <a target="_blank" class="transition ease" href="http://uwm.edu/planetarium/ease"><i class="fab fa-node-js"></i>&nbsp;&nbsp;Ease</a>
+      </div>
+
+      <div class="item">
+        <a target="_blank" class="transition asana" href="https://app.asana.com/-/login?u=%2F0%2F485584773130916%2Flist"><i class="fas fa-calendar-check"></i>&nbsp;&nbsp;Asana</a>
+      </div>
+
+      <div class="item">
+        <a target="_blank" class="transition hulu" href="https://hulu.com"><i class="fas fa-video"></i>&nbsp;&nbsp;Hulu</a>
+      </div>
+
+      <div class="item">
+        <a target="_blank" class="transition netflix" href="https://www.netflix.com/browse"><i class="fas fa-film"></i>&nbsp;&nbsp;Netflix</a>
+      </div>
+
+      <div class="item">
+        <a target="_blank" class="transition youtube" href="https://www.youtube.com"><i class="fab fa-youtube-square "></i>&nbsp;&nbsp;YouTube</a>
+      </div>
+
+      <div class="item"><a target="_blank" class="transition twitch " href="https://www.twitch.tv"><i class="fab fa-twitch"></i>&nbsp;&nbsp;Twitch</a>
+      </div>
+
+
+    </div>
+</body>

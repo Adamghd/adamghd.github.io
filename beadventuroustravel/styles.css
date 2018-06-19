@@ -347,7 +347,7 @@
   .indexmain {
     margin-top: 75px;
     height: 100% !important;
-    background: url("/_images/road_background.jpg") no-repeat fixed center;
+    background: url("_images/road_background.jpg") no-repeat fixed center;
     background-size: cover;
     width: 100%;
     top: 0;

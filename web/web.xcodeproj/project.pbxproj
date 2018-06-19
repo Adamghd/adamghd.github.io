@@ -21,6 +21,7 @@
 			attributes = {
 				LastUpgradeCheck = 0940;
 			};
+			buildConfigurationList = 6F668DB520C6E43200422BD1 /* Build configuration list for PBXProject "web" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;

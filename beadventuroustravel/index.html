@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Be Adventurous Travel</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 700px)" href="styles.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 699px)" href="styles-small.css">
+
+
+	<link href="https://fonts.googleapis.com/css?family=Karma|Lato" rel="stylesheet">
+	<link rel='icon' href='_images/logo.png' type='icon/png'>
+	<!-- Fontawesome icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+
+
+</head>
+
+<body>
+	<body>
+	  <nav>
+			<div class="nav-title">
+				<h1>BE<span class="nav-title_bold">ADVENTUROUS</span>TRAVEL</h1>
+			</div>
+
+			<div class="nav-right">
+				<a href="index.html"><h3>HOME</h3></a>
+				<a href="about.html"><h3>ABOUT</h3></a>
+				<a href="contact.html"><h3>CONTACT</h3></a>
+				<a href="resources.html"><h3>RESOURCES</h3></a>
+				<a href="gallery.html"><h3>GALLERY</h3></a>
+				<a href="http://www.landseatravel.com/"><h3>PROMOTIONS</h3></a>
+			</div>
+
+			<div id=menu class="menu-button">
+				<i class="fa-layers">
+						<i class="fas fa-square fa-2x" data-fa-transform="grow-3"></i>
+				<i class="fas fa-bars" style="color: white" data-fa-transform="grow-11 right-5.9"></i>
+				</i>
+			</div>
+
+			</div>
+		</nav>
+
+
+	<!-- MODALS -->
+	<modal>
+		<!-- PACKAGES -->
+		<div id="packagesModal" class="fade packages-modal">
+			<div class="packages-modal-content" id="package">
+				<span class="packages_close">&times;</span>
+				<h2>PACKAGES</h2>
+				<h4>Call us now to customize the ultimate vacation package!</h4>
+				<p>
+					Whether it be a flight, train, bus, or boat, we can help you get to your destination. Combine that with a hotel, car rental, city tour and more to maximize your vacation. BE Adventurous Travel can save you money, time and headaches. Open up a world of
+					possibilities that fit your lifestyle and budget by contacting us today.
+				</p>
+			</div>
+		</div>
+
+		<!-- CRUISES -->
+		<div id="cruisesModal" class="fade cruises-modal">
+			<div class="cruises-modal-content" id="cruises">
+				<span class="cruises_close">&times;</span>
+				<h2>CRUISES</h2>
+				<table>
+					<tr>
+						<th>
+							<h2>Holland America Line</h2></th>
+						<td>For more than 140 years, Holland America Line has been a recognized leader in cruising, taking our guests to exotic destinations around the world. If you are looking for some of the most spacious and comfortable ships at sea, award-winning service,
+							five star dining, extensive activities and enrichment programs and compelling worldwide itineraries, you've come to the right place.</td>
+					</tr>
+
+					<tr>
+						<th>
+							<h2>Royal Caribbean International</h2></th>
+						<td>The cruise line sails 23 of the world’s most innovative cruise ships calling on more than 288 destinations in 77 countries across six continent visiting the most popular destinations in Bermuda and the Caribbean, Europe, Canada and New England,
+							Alaska, South America, Asia, and Australia and New Zealand.</td>
+					</tr>
+					<tr>
+						<th>
+							<h2>Azamara Club Cruises</h2></th>
+						<td>What makes Azamara Club Cruises® different from everyone else? It’s our focus on Destination Immersion®—where longer stays, more overnights and night touring are included on 100% of our voyages. This means you get to explore everything from nightlife
+							in Stockholm and morning walks in the French Riviera to all-day adventures in Costa Rica’s rain forests. Because life isn’t on a 9 to 5 schedule, and neither are Azamara voyages</td>
+					</tr>
+					<tr>
+						<th>
+							<h2>Princess Cruises</h2></th>
+						<td>Today, the line has grown to become the third largest cruise line in the world, renowned for innovative ships, an array of onboard options, and an environment of exceptional customer service. A recognized leader in worldwide cruising, Princess carries
+							1.7 million guests each year to destinations around the globe ranging in length from three to 114 days, allowing them to see the world and come back new.</td>
+					</tr>
+					<tr>
+						<th style="border: none">
+							<h2>MSC Cruises</h2></th>
+						<td style="border: none">MSC Cruises is the world’s fourth largest cruise line and largest privately-owned cruise company, and market leader in the Mediterranean, South America and South Africa. Following several years of unprecedented growth, MSC Cruises sails throughout
+							the year in the Mediterranean, and offers a wide range of seasonal itineraries in Northern Europe, the Atlantic Ocean, the Caribbean, Cuba and French Antilles, South America, South Africa, the Abu Dhabi, Dubai and Oman.</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<!-- TOURS AND DESTINATIONS -->
+		<div id="toursModal" class="fade tours-modal">
+			<div class="tours-modal-content" id="tours">
+				<span class="tours_close">&times;</span>
+				<h2>DESTINATIONS</h2>
+
+				<!-- SLIDESHOW -->
+				<div class="slideshow">
+					<div class="mySlides">
+						<div class="numbertext">Africa</div>
+						<img src="_images/africa.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">Asia</div>
+						<img src="_images/asia.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">Australia</div>
+						<img src="_images/aus.jpg" style="width:130%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">Belize</div>
+						<img src="_images/belize.jpg" style="width:100%; top: 20%;">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">Canada</div>
+						<img src="_images/canada.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">Central America</div>
+						<img src="_images/central.jpg" style="width:100%; padding-bottom: 40%;">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">Europe</div>
+						<img src="_images/europe.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">Hawaii</div>
+						<img src="_images/hawaii.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">Russia</div>
+						<img src="_images/rus.jpg" style="width:100%;">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">South America</div>
+						<img src="_images/south.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">United States</div>
+						<img src="_images/us.jpg" style="width:100%">
+					</div>
+
+
+					<!-- Next and previous buttons -->
+					<a class="prev" onclick="plusSlides(-1)"><i class="fas fa-angle-left fa-2x"></i></a>
+					<a class="next" onclick="plusSlides(1)"><i class="fas fa-angle-right fa-2x"></i></a>
+
+					<!-- Thumbnail images -->
+					<div class="row">
+						<div class="column">
+							<img class="demo cursor" src="_images/africa.jpg" style="width:100%" onclick="currentSlide(1)">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="_images/asia.jpg" style="width:100%" onclick="currentSlide(2)">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="_images/aus.jpg" style="width:100%" onclick="currentSlide(3)">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="_images/belize.jpg" style="width:100%" onclick="currentSlide(4)">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="_images/canada.jpg" style="width:100%" onclick="currentSlide(5)">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="_images/central.jpg" style="width:100%" onclick="currentSlide(6)">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="_images/europe.jpg" style="width:100%" onclick="currentSlide(7)">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="_images/hawaii.jpg" style="width:100%" onclick="currentSlide(8)">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="_images/rus.jpg" style="width:100%" onclick="currentSlide(9)">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="_images/south.jpg" style="width:100%" onclick="currentSlide(10)">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="_images/us.jpg" style="width:100%" onclick="currentSlide(11)">
+						</div>
+					</div>
+				</div>
+				<!-- SLIDESHOW JAVASCRIPT -->
+				<script type="text/javascript">
+					var slideIndex = 1;
+					showSlides(slideIndex);
+
+					// Next/previous controls
+					function plusSlides(n) {
+						showSlides(slideIndex += n);
+					}
+
+					// Thumbnail image controls
+					function currentSlide(n) {
+						showSlides(slideIndex = n);
+					}
+
+					function showSlides(n) {
+						var i;
+						var slides = document.getElementsByClassName("mySlides");
+						var dots = document.getElementsByClassName("demo");
+						var captionText = document.getElementById("caption");
+						if (n > slides.length) {
+							slideIndex = 1
+						}
+						if (n < 1) {
+							slideIndex = slides.length
+						}
+						for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";
+						}
+						for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" active", "");
+						}
+						slides[slideIndex - 1].style.display = "block";
+						dots[slideIndex - 1].className += " active";
+						captionText.innerHTML = dots[slideIndex - 1].alt;
+					}
+				</script>
+				<hr style="margin-top:20px; border: 1px dashed grey;" />
+				<h2>TOURS</h2>
+				<table>
+					<tr>
+						<th>
+							<h2><span class="nav-title_bold">ADVENTURES</span> BY DISNEY</h2></th>
+						<td>When you travel to worldwide destinations on an Adventures by Disneyvacation you do much more than sightsee. You experience firsthand the people and cultures of the places you visit—and you do so with the service, VIP experiences and unique local
+							opportunities you can only expect from Disney.</td>
+					</tr>
+
+					<tr>
+						<th>
+							<h2><span class="nav-title_bold">MAYFLOWER</span><br />TOURS</h2></th>
+						<td>Value-added traveling The Mayflower Way providing life enriching experiences on each and every holiday. Each Mayflower Tour has a professional Tour Manager on board to ensure all of the details are taken care of. Mayflower Tours works closely with
+							travel agents to sell to individual travelers and groups throughout the world.</td>
+					</tr>
+					<tr>
+						<th>
+							<h2><span class="nav-title_bold">MONO</span><br />GRAMS</h2></th>
+						<td>You want to see the world, but don't know where to begin? Well, we're Monograms and we began a long time ago - putting all of the planning, arranging and coordinating into all-in-one package. In fact, the work is done. It's time to start crossing
+							sights off your list. It's time to turn "someday" into "today." It's time to just go. And enjoy once-in-a-lifetime experiences.</td>
+					</tr>
+					<tr>
+						<th style="border: none">
+							<h2><span class="nav-title_bold">GLOBUS</span></h2></th>
+						<td style="border: none">When we envision the perfect vacation, we see great hotels, amazing food, incredible sightseeing, and above all, we imagine creating memories galore! What we don't picture is what it takes to organize a jaw-dropping, stress-free getaway. From transportation
+							to hotels; and from researching must-see attractions to organizing daily schedules, planning a vacation is no easy task.</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<!-- RESORTS -->
+		<div id="resortsModal" class="fade resorts-modal">
+			<div class="resorts-modal-content" id="resorts">
+				<span class="resorts_close">&times;</span>
+				<h2>RESORTS</h2>
+				<table>
+					<tr>
+						<th>
+							<h2><span class="nav-title_bold">SANDALS</span></h2></th>
+						<td>Come experience the very pinnacle of luxury Caribbean all-inclusive vacations with Sandals Resorts. Sandals delights couples in love, and families with supreme vacation packages at luxury resorts in St. Lucia, Jamaica,Antigua, the Bahamas, Grenada
+							and Barbados, featuring gourmet candlelit dining for two, gorgeous tropical settings and some of the world's most exquisite beaches, where golf and scuba are included at each all-inclusive resort. If you are planning a wedding, Sandals is the leader
+							in Caribbean destination weddings and honeymoon packages.</td>
+					</tr>
+
+					<tr>
+						<th>
+							<h2><span class="nav-title_bold">BEACHES</span></h2></th>
+						<td>Now a truly beloved brand in the densely-packed family vacation market, having been voted the World's Leading Family All-Inclusive Resort for 14 years in a row, Beaches Resorts has established itself as the ultimate family-friendly all-inclusive
+							resort in the Caribbean, offering an unforgettable vacation experience for guests of all ages.</td>
+					</tr>
+					<tr>
+						<th>
+							<h2><span class="nav-title_bold">GRAND<br />PINEAPPLE</span></h2></th>
+						<td>The simple, unadorned pleasures of the islands await at enchanting all inclusive resorts in Jamaica and Antigua! Grand Pineapple Beach Negril and Grand Pineapple Beach Antigua tender silky white sand stretches gently caressed by translucent turquoise
+							waves, colorful accommodations nestled amidst lush flowering gardens, and abundantly delicious food served up beneath the deep-blue tropical sky – truly these two delightful resorts in Jamaica and Antigua are among the most value-laden getaways
+							in all of the Caribbean!​</td>
+					</tr>
+					<tr>
+						<th>
+							<h2><span class="nav-title_bold">WINDY<br />HILL</span></h2></th>
+						<td>Windy Hill Resort is located in the foothills of the Maya Mountains, the most diverse area of Belize. This beautiful resort provides all the modern conveniences in a lush tropical setting and just minutes from the archaeological sites, rivers, caves
+							and other attractions that visitors come to see and experience in Belize. After a busy day of trekking around the Maya temples, canoeing or tubing through the caves, hiking through the rainforest, or horseback riding along jungle trails, you will
+							enjoy the relaxed atmosphere and the amenities of Windy Hill.</td>
+					</tr>
+					<tr>
+						<th style="border: none">
+							<h2><span class="nav-title_bold">DISNEY<br />LAND</span></h2>
+							<td style="border: none">
+								<p>California</p>Enter a magical kingdom where you can sail with pirates, explore exotic jungles, meet fairy-tale princesses, dive under the ocean and rocket through the stars—all in the same day! Disneyland Park is a beloved Southern California
+								destination where generations of families have made their Disney dreams come true. Opened in 1955, Walt Disney’s original theme park is divided into 8 extravagantly themed lands—Main Street, U.S.A., Tomorrowland, Fantasyland, Mickey's Toontown,
+								Frontierland, Critter Country, New Orleans Square and Adventureland. Not only do you get to experience the magic of the theme parks, but there are also many on-sight resorts to stay in!</td>
+					</tr>
+					<tr>
+						<th style="border: none">
+							<h2><span class="nav-title_bold">DISNEY WORLD</span></h2>
+							<td style="border: none">
+								<p>Florida</p>Walt Disney World also has many on-sight resorts to stay in! So after a long day of fun in the sun, you can relax and enjoy your vacation! The possibilities are endless!</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+
+	</modal>
+
+
+	<!-- MAIN CONTENT -->
+	<main>
+		<div class="indexmain">
+			<h1 class="slogan">BE ADVENTUROUS <span class=slogan-light>WITH<br /> YOUR NEXT VACATION</span></h1>
+		</div>
+		<!-- CARDS -->
+		<div class="cards">
+			<a name="load"></a>
+			<!-- PACKAGES -->
+			<div class="card">
+				<h2 class="card-title">PACKAGES</h2>
+				<img class="card-picture" src="_images/background_palms.jpg" />
+				<p>
+					We believe travel broadens the mind and gives each of us a different perspective on life. Get out and experience the world! We know you'll love it.
+				</p>
+				<div class="readmore cursor" id="packages_btn">
+					<h3>READ MORE</h3>
+				</div>
+			</div>
+			<!-- CRUISES -->
+			<div class="card">
+				<h2 class="card-title">CRUISES</h2>
+				<a name='load'></a><img class="card-picture" src="_images/cruise.jpg" />
+				<p>
+					When you visit a destination with a culture, lifestyle, and environment different from your own, you'll become more open to various ways of life!
+				</p>
+				<div class="readmore cursor" id="cruise_btn">
+					<h3>READ MORE</h3>
+				</div>
+			</div>
+			<!-- TOURS -->
+			<div class="card tours-card">
+				<h2 class="card-title" style="padding-top: 10px;">TOURS AND DESTINATIONS</h2>
+				<img class="card-picture" src="_images/paris.jpg" style="margin-top: -14px" />
+				<p>
+					With so many places to visit, choosing a travel destination can be a difficult. Talk to a staff member to find out what each location has to offer!
+				</p>
+				<div class="readmore cursor" id="tours_btn">
+					<h3>READ MORE</h3>
+				</div>
+			</div>
+			<!-- RESORTS -->
+			<div class="card">
+				<h2 class="card-title">RESORTS</h2>
+				<img class="card-picture" src="_images/resort.jpg">
+				<p>
+					When you travel with us, you can trust that we'll take care of you. Our top-notch services and amenities guarantee you'll have a relaxing time.
+				</p>
+				<div class="readmore cursor" id="resorts_btn">
+					<h3>READ MORE</h3>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="contact">
+			<h3 style="font-family: Lato ">CONTACT US</h3>
+			<hr style="width: 120px;" />
+			<p>
+				<a href="tel:6088734998">(608) 873-4998</a><br /></p>
+			<p style="padding-top: 5px;">
+				756 Edenberry Ln<br /> Oregon, WI 53575<br />
+			</p>
+			<p style="padding-top: 5px;">
+				<a href="mailto:beadtravel@gmail.com">beadtravel@gmail.com</a>
+			</p>
+		</div>
+		<div class="logo">
+			<img src="_images/logo.png" />
+		</div>
+		<div class="name">
+			<h1>
+					BE
+					<span class="footer-title_bold">ADVENTUROUS</span>
+					TRAVEL
+				</h1>
+			<p>&copy; BE ADVENTUROUS TRAVEL, LLC 2018<br />ALL RIGHTS RESERVED<br><span class=credit>SITE BUILT BY ADAM GAFF @ <a href="http://adamgaff.com">AMGHD<span class=com>.COM</a></span></p>
+		</div>
+	</footer>
+
+
+	<!-- MODAL javascript -->
+
+	<script type="text/javascript">
+		//PACKAGES
+		var packages = document.getElementById('packagesModal');
+		var packages_btn = document.getElementById("packages_btn");
+		var packages_span = document.getElementsByClassName("packages_close")[0];
+		packages_btn.onclick = function() {
+			packages.style.display = "block";
+		}
+		packages_span.onclick = function() {
+			packages.style.display = "none";
+		}
+		window.onclick = function(event) {
+			if (event.target == packages) {
+				packages.style.display = "none";
+			}
+		}
+	</script>
+
+	<script type="text/javascript">
+		//CRUISES
+		var cruises = document.getElementById('cruisesModal');
+		var cruises_btn = document.getElementById("cruise_btn");
+		var cruises_span = document.getElementsByClassName("cruises_close")[0];
+		cruises_btn.onclick = function() {
+			cruises.style.display = "block";
+			body.classList.toggle('noscroll');
+		}
+		cruises_span.onclick = function() {
+			cruises.style.display = "none";
+		}
+		window.onclick = function(event) {
+			if (event.target == cruises) {
+				cruises.style.display = "none";
+			}
+		}
+		$(document).ready(function() {
+			$('#cruise_btn').click(function() {
+				$('body').css('overflow', 'hidden');
+				$('.cruises-modal-content').css('overflow', 'scroll');
+			});
+			$('.cruises_close').click(function() {
+				$('body').css('overflow', 'auto');
+			});
+			$('')
+		});
+	</script>
+
+	<script type="text/javascript">
+		//TOURS
+		var tours = document.getElementById('toursModal');
+		var tours_btn = document.getElementById("tours_btn");
+		var tours_span = document.getElementsByClassName("tours_close")[0];
+		tours_btn.onclick = function() {
+			tours.style.display = "block";
+			body.classList.toggle('noscroll');
+		}
+		tours_span.onclick = function() {
+			tours.style.display = "none";
+		}
+		window.onclick = function(event) {
+			if (event.target == tours) {
+				tours.style.display = "none";
+			}
+		}
+		$(document).ready(function() {
+			$('#tours_btn').click(function() {
+				$('body').css('overflow', 'hidden');
+			});
+			$('.tours_close').click(function() {
+				$('body').css('overflow', 'auto');
+			});
+			$('')
+		});
+	</script>
+
+	<script type="text/javascript">
+		//TOURS
+		var resorts = document.getElementById('resortsModal');
+		var resorts_btn = document.getElementById("resorts_btn");
+		var resorts_span = document.getElementsByClassName("resorts_close")[0];
+		resorts_btn.onclick = function() {
+			resorts.style.display = "block";
+			body.classList.toggle('noscroll');
+		}
+		resorts_span.onclick = function() {
+			resorts.style.display = "none";
+		}
+		window.onclick = function(event) {
+			if (event.target == resorts) {
+				resorts.style.display = "none";
+			}
+		}
+		$(document).ready(function() {
+			$('#resorts_btn').click(function() {
+				$('body').css('overflow', 'hidden');
+			});
+			$('.resorts_close').click(function() {
+				$('body').css('overflow', 'auto');
+			});
+			$('')
+		});
+	</script>
+
+	<script>
+		$(function() {
+			$('#menu').slicknav();
+		});
+	</script>
+
+	<script type="text/javascript">
+		$("#menu").click(function() {
+			$(".nav-right").toggleClass("nav-right_shown")
+		});
+	</script>
+
+</body>

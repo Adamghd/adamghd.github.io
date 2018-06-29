@@ -347,7 +347,7 @@
   .indexmain {
     margin-top: 75px;
     height: 100% !important;
-    background: url("images/road_background.jpg") no-repeat fixed center;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/_images/tropicalbg.jpg") no-repeat fixed center;
     background-size: cover;
     width: 100%;
     top: 0;
@@ -355,7 +355,8 @@
   }
   .slogan {
     position: static;
-    font: 300 50px "Lato";
+    font: 50px "Lato";
+    font-weight: 500 !important;
     text-align: center;
     padding: 21.5%;
     color: #fff;
@@ -363,7 +364,7 @@
   }
   .slogan-light {
     font-family: "Lato";
-    font-weight: 100
+    font-weight: 300;
   }
   .cards {
     display: flex;
@@ -413,6 +414,26 @@
   main img {
     width: 250px;
     height: 187px
+  }
+  .contactmain {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px
+  }
+  .aboutmain {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px
+  }
+  .about {
+    width: 80%;
+    background: #313131;
+    display: flex;
+    justify-content: center !important;
+    margin: 50px
+  }
+  .about img {
+    width: 333px
   }
   .aboutmain {
     display: flex;

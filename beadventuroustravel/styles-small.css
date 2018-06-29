@@ -166,7 +166,7 @@
     z-index: 2343;
     top: 50px;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 50px);
     background-color: white;
     box-shadow: 15px 15px 25px rgba(0,0,0,0.5);
     overflow-x: hidden !important;
@@ -216,8 +216,8 @@
     z-index: 2343;
     top: 50px;
     width: 100%;
-    height: 100%;
-    background-color: white;
+    height: calc(100% - 50px);
+        background-color: white;
     box-shadow: 15px 15px 25px rgba(0,0,0,0.5);
     overflow-x:hidden !important;
   }
@@ -225,7 +225,7 @@
     padding-top: 10px;
     margin: auto;
     display: block;
-    width: 90%;
+    width: 100%;
     max-width: 700px;
     text-align: left;
     z-index: 234;
@@ -263,8 +263,8 @@
     z-index: 2343;
     top: 50px;
     width: 100%;
-    height: 100%;
-    background-color: white;
+    height: calc(100% - 50px);
+        background-color: white;
     box-shadow: 15px 15px 25px rgba(0,0,0,0.5);
     overflow-x:hidden !important;
   }
@@ -396,8 +396,8 @@
   .indexmain {
     margin-top: 75px;
     height: 100% !important;
-    background: url("images/road_background.jpg") no-repeat fixed center;
-    background-size: cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/_images/tropicalbg.jpg") no-repeat center;
+    background-position: fixed;
     width: 100%;
     margin-top: -30px;
     left: 0;
@@ -624,13 +624,16 @@
     display: none;
   }
   /* GALLERY */
+  .gallerypage .title {
+    margin-top: 70px !important;
+  }
   .slideshow img {
     height: auto;
   }
   .slideshow {
     position: relative;
-    width: 90%;
-    margin: 50px 0px;
+    width: 100%;
+    margin: 20px 0px;
   }
   .mySlides {
     overflow: auto;

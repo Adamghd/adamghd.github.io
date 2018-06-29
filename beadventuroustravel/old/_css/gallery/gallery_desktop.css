@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Karma:400,500|Lato:100,300,400,700');
+body, h1, h2, h3, h4, h5, p, a {
+  margin: 0px;
+  font-family: "Lato";
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: #313131;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #00a5d4;
+  transition: 0.3s;
+}
+
+h3, h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+/* NAV BAR */
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+  position: fixed;
+  top: 0;
+  height: 36.75px;
+  width: 100%;
+  background: white;
+  z-index: 2345;
+}
+
+nav a {
+  padding: 9%;
+  padding-top: 10px;
+}
+
+nav h3 {
+  font-size: 17px;
+}
+
+nav h1 {
+  font-size: 30px;
+}
+
+
+
+.nav-title {
+  display: flex;
+  width: 65%;
+  justify-content: flex-start;
+  font-size: 22px;
+  padding-top: 0px;
+  cursor: default;
+  margin-left: 25px;
+}
+.nav-title_bold {
+  font-family: "Lato";
+  font-weight: 800;
+  color: black;
+  transition: 0.3s;
+}
+.nav-title:hover .nav-title_bold {
+  color: #00a5d4;
+  transition: 0.3s;
+}
+
+.nav-right {
+  display: flex;
+  width: 35%;
+  justify-content: flex-end;
+}
+.menu-button {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+
+/* MAIN */
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-family: "Lato";
+  font-weight: 300;
+}
+
+.title {
+  margin-top: 100px;
+  color: black;
+  text-align: center;
+}
+
+/* SLIDESHOW */
+
+.slideshow {
+  position: relative;
+  width: 50%;
+  margin: 50px 0px;
+}
+.mySlides {
+  overflow: auto;
+  transition: 0.3s;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px
+  color: white;
+  background: rgba(255,255,255,0.5);
+  border-radius: 0px 10px 10px 0px;
+}
+
+.next {
+  right: 0;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.numbertext {
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 7.14%;
+  text-align: center;
+}
+
+.demo {
+  opacity: 0.6;
+  transition: 0.3s;
+  height: 50px;
+}
+
+.active, .demo:hover {
+  opacity: 1;
+  transition: 0.3s
+}
+
+
+/* FOOTER */
+
+footer {
+  height: 300px;
+  background: #313131;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 33%;
+  text-align: center;
+}
+
+.logo img {
+  width: 200px;
+  height: 200px;
+  padding-top: 55px;
+}
+
+.footer-title_bold {
+  font-family: "Lato";
+  font-weight: 400;
+  color: white;
+  transition: 0.3s;
+}
+
+.name {
+  padding-top: 135px;
+  color: white;
+  width: 33%;
+  text-align: right;
+  margin-right: 5%;
+}
+
+.contact {
+  text-transform: uppercase;
+  color: white !important;
+  width: 33%;
+  padding-top: 75px;
+  text-align: center;
+  margin-left: 5%;
+  line-height: 25px
+}
+
+.contact a {
+  color: white;
+  transition: 0.3s;
+}
+
+.contact a:hover {
+  color: #00a5d4;
+  transition: 0.3s;
+}

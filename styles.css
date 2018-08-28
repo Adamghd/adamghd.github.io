@@ -883,7 +883,7 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     padding: 10px 0px;
   }
   .logo-letter-sm {
-    width: 34px;
+    width: 53px;
     margin-bottom: -1px;
     margin-right: -5px;
   }
@@ -906,8 +906,9 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     height: 100%;
   }
   .title {
-    font-size: 40px;
+    font-size: 70px;
     color: white;
+    line-height: 0.5em;
     text-align: left;
   }
   .blurb {

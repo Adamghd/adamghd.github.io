@@ -269,6 +269,11 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     margin-bottom: -2px;
     margin-right: -5px;
   }
+  .logo-letter-sm {
+    width: 46px;
+    margin-bottom: -2px;
+    margin-right: -5px;
+  }
   #bm {
     background-color: #141414;
     display: block;

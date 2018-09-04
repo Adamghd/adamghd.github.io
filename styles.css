@@ -6,9 +6,10 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
   -ms-user-select: none;
   user-select: none;
 }
+
 @font-face {
-    font-family: product-sans;
-    src: url(fonts/product-sans.ttf);
+  font-family: product-sans;
+  src: url(fonts/product-sans.ttf);
 }
 
 /* ---------------- SMOOTHSTATE ---------------- */
@@ -499,25 +500,20 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     text-align: center;
     justify-content: center;
   }
-
   /* EDIT THESE */
-
   .completed {
     height: 80vh;
   }
   .PROGRESS {
     height: 60vh;
   }
-
   /* ---------- */
-
   .seperator {
     height: 20px;
-    background: linear-gradient(rgba(9, 217, 255, 0.8) ,#ff095a);
+    background: linear-gradient(rgba(9, 217, 255, 0.8), #ff095a);
     position: relative;
     animation: 1.3s ease-in-out 0s slideRight !important;
   }
-
   .boxes a {
     cursor: pointer !important;
     transition: 0.3s;
@@ -671,6 +667,9 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     background: #f15789;
     transition: 0.3s;
   }
+  .desktop-hide {
+    display: none;
+  }
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -695,13 +694,166 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     padding: 0px;
   }
   /* ---------------- NAV ---------------- */
-  nav ul {
-    list-style-type: none;
-    text-align: center;
-    bottom: 20px;
+  .menu {
+    margin-top: 7px;
+    margin-left: 5px;
+    width: 23px;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 25px;
+    position: relative;
+    transform: scale(0.8);
   }
-  nav ul li {
-    display: inline-block;
+  .menu .bit-1::before {
+    content: '';
+    left: 0.5em;
+    top: 0.5em;
+    position: absolute;
+    width: 1em;
+    transform-origin: left bottom;
+    height: 0.3em;
+    background: #09d9ff;
+    transition: transform 0.3s, top 0.3s;
+  }
+  .menu .bit-1::after {
+    content: '';
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+    width: 1em;
+    transform-origin: right bottom;
+    height: 0.3em;
+    background: #09d9ff;
+    transition: transform 0.3s, top 0.3s;
+  }
+  .menu .bit-2 {
+    position: absolute;
+    width: 2em;
+    top: 50%;
+    left: 50%;
+    height: 0.3em;
+    background: #09d9ff;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s 0.3s, width 0.3s 0.6s;
+  }
+  .menu .bit-3::before {
+    content: '';
+    position: absolute;
+    bottom: 0.5em;
+    left: 0.5em;
+    width: 1em;
+    transform-origin: left top;
+    height: 0.3em;
+    background: #09d9ff;
+    transition: transform 0.3s, bottom 0.3s;
+  }
+  .menu .bit-3::after {
+    content: '';
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+    width: 1em;
+    transform-origin: right top;
+    height: 0.3em;
+    background: #09d9ff;
+    transition: transform 0.3s, bottom 0.3s;
+  }
+  .menu.open .bit-1:before {
+    top: 0.4em;
+    width: 1.2em;
+    transform: rotate(45deg);
+    transform-origin: left bottom;
+    transition: transform 0.3s 0.3s, width 0.3s 0.3s, top 0.3s 0.3s;
+    background: #FF095A;
+  }
+  .menu.open .bit-1:after {
+    top: 0.4em;
+    width: 1.2em;
+    transform: rotate(-45deg);
+    transform-origin: right bottom;
+    transition: transform 0.3s 0.3s, width 0.3s 0.3s, top 0.3s 0.3s;
+    background: #FF095A;
+  }
+  .menu.open .bit-2 {
+    width: 0.3em;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: transform 0.3s 0.3s, width 0.3s;
+    background: #FF095A;
+  }
+  .menu.open .bit-3:before {
+    bottom: 0.4em;
+    width: 1.2em;
+    transform: rotate(-45deg);
+    transform-origin: left top;
+    transition: transform 0.3s 0.3s, width 0.3s 0.3s, bottom 0.3s 0.3s;
+    background: #FF095A;
+  }
+  .menu.open .bit-3:after {
+    bottom: 0.4em;
+    width: 1.2em;
+    transform: rotate(45deg);
+    transform-origin: right top;
+    transition: transform 0.3s 0.3s, width 0.3s 0.3s, bottom 0.3s 0.3s;
+    background: #FF095A;
+  }
+  .top-nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    background: #0f0f0f;
+    z-index: 1001101010;
+  }
+  .nav-logo-div {
+    width: calc(100% - 75px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+  }
+  .nav-logo {
+    height: 50px;
+    padding-left: 75px;
+  }
+  .nav-toggle-div {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+    padding-right: 25px;
+  }
+  .nav-toggle {
+    width: 45px;
+  }
+  .nav-expand {
+    background: white;
+    display: none;
+    margin-top: 60px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+  }
+  .nav-expand-text {
+    height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    background: #0f0f0f;
+  }
+  .nav-expand-text a {
+    transform: scale(1.4);
+    padding: 10px 30px;
+    margin-top: -10px;
+  }
+  .bug-nav {
+    margin-top: -60px;
+  }
+  .bug-nav2 {
+    padding-bottom: 50px;
   }
   body {
     background-color: #141414;
@@ -718,20 +870,6 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
   }
   .mobile-hide {
     display: none;
-  }
-  .nav {
-    display: flex;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    text-align: center;
-    width: 100%;
-    height: 60px;
-    background: #0f0f0f;
-    color: #fff;
-    z-index: 3;
   }
   .icon-div {
     display: flex;
@@ -758,11 +896,7 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     height: 100%;
     width: 100%;
   }
-  .icons ul li {
-    vertical-align: center;
-    margin: auto;
-    padding: 1vw;
-  }
+
   .icons {
     display: flex;
     justify-content: center;
@@ -864,8 +998,8 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     margin-right: -5px;
   }
   #bm {
-     width: 300%;
-  height: 1000px;
+    width: 300%;
+    height: 1000px;
     background-color: #141414;
     display: block;
     position: fixed !important;
@@ -1087,7 +1221,6 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
   input[type="text"] {
     box-sizing: border-box;
   }
-
   /* ---------- WORK ---------- */
   .workmain {
     z-index: -1231231231231;
@@ -1095,9 +1228,7 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     overflow: scroll;
     height: 100%;
     margin-top: 60px !important;
-  }
-  .work {
-        background: #09d9ff;
+    padding-top: 60px;
   }
   .completed, .PROGRESS {
     width: 100%;
@@ -1105,25 +1236,20 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     display: flex;
     align-items: center;
   }
-
   /* EDIT THESE */
-
   .completed {
     height: 80vh;
   }
   .PROGRESS {
     height: 60vh;
   }
-
   /* ---------- */
-
   .seperator {
     height: 20px;
-    background: linear-gradient(rgba(9, 217, 255, 1) ,#ff095a);
+    background: linear-gradient(rgba(9, 217, 255, 1), #ff095a);
     position: relative;
     animation: 1.2s ease-in-out 0s slideRight !important;
   }
-
   .boxes a {
     cursor: pointer !important;
     transition: 0.3s;
@@ -1254,7 +1380,6 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
   }
   .coming h1 {
     font-size: 1.2em;
-
   }
   .coming a {
     color: white;

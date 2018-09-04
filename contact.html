@@ -20,7 +20,35 @@
 
 <body>
   <div id="main" class="m-scene">
-    <nav>
+    <!-- MOBILE NAV -->
+
+    <nav class="bug-nav2 desktop-hide">
+      <div class="top-nav">
+        <div class="nav-logo-div">
+          <img class="nav-logo" src="_images/images/img_0.png" />
+        </div>
+        <div class="menu">
+          <div class="bit-1"></div>
+          <div class="bit-2"></div>
+          <div class="bit-3"></div>
+        </div>
+      </div>
+      <div class="nav-expand">
+        <div class="nav-expand-text">
+          <a href="index.html"><i data-fa-transform="grow-5"class="icon fas fa-home"></i>
+            <p class="desc">HOME</p></a>
+          <a href="work.html"><i data-fa-transform="grow-5"class="icon fas fa-desktop"></i>
+            <p class="desc">WORK</p></a>
+          <a href="about.html"><i data-fa-transform="grow-5"class="icon fas fa-user"></i>
+            <p class="desc">ABOUT</p></a>
+          <a href="contact.html"><i data-fa-transform="grow-5"class="icon fas fa-envelope"></i>
+            <p class="desc">CONTACT</p></a> </div>
+      </div>
+    </nav>
+
+    <!-- DESKTOP NAV -->
+
+    <nav class=mobile-hide>
       <div class="nav">
         <div class="logo-name">
           <img src="_images/images/img_0.png" style="width: 40px;" />
@@ -29,7 +57,7 @@
         <div class="icon-div">
           <div class="icons">
             <ul>
-              <li class=active>
+              <li>
                 <a href="index.html"><i data-fa-transform="grow-5"class="icon fas fa-home"></i>
               <p class="desc">HOME</p></a>
               </li>
@@ -49,21 +77,21 @@
           </div>
         </div>
 
-        <div class="social">
-          <ul>
-            <li>
-              <a target=_blank href="https://twitter.com/adam_gaff"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li>
-              <a target=_blank href="https://www.youtube.com/channel/UCYYgyQP0xRDeGNJLWRCoIjA?view_as=subscriber"><i class="fab fa-youtube"></i></a>
-            </li>
-            <li>
-              <a target=_blank href="https://instagram.com/adamg_hd"><i class="fab fa-instagram"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div class="social">
+      <ul>
+        <li>
+          <a target=_blank href="https://twitter.com/adam_gaff"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a target=_blank href="https://www.youtube.com/channel/UCYYgyQP0xRDeGNJLWRCoIjA?view_as=subscriber"><i class="fab fa-youtube"></i></a>
+        </li>
+        <li>
+          <a target=_blank href="https://instagram.com/adamg_hd"><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
 
     <main>
 
@@ -355,6 +383,26 @@
     </main>
     <script src="_js/index.js"></script>
     <script src="_js/ss.js"></script>
+    <!-- nav menu -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".menu").click(function() {
+          $(".nav-expand").slideToggle(700);
+        });
+        $(".icon").click(function() {
+          $(".nav-expand").slideUp(200);
+        })
+      });
+    </script>
+
+    <script type="text/javascript">
+      var menu = document.querySelector('.menu');
+
+      function toggleMenu() {
+        menu.classList.toggle('open');
+      }
+      menu.addEventListener('click', toggleMenu);
+    </script>
   </div>
 </body>
 

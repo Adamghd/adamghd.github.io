@@ -800,6 +800,8 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
   }
   .top-nav {
     position: fixed;
+    height: 75px;
+    align-items: center;
     width: 100%;
     display: flex;
     background: #0f0f0f;
@@ -851,14 +853,17 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
   }
   .bug-nav {
     margin-top: -60px;
+    z-index: 12312312122312;
   }
   .bug-nav2 {
     padding-bottom: 50px;
+    z-index: 123123123123
   }
   body {
     background-color: #141414;
     overflow-y: scroll;
     overflow-x: hidden;
+    z-index: -10;
   }
   nav a {
     color: #414141;

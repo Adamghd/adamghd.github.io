@@ -502,7 +502,7 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
   }
   /* EDIT THESE */
   .completed {
-    height: 100vh;
+    height: 120vh;
   }
   .PROGRESS {
     height: 40vh;
@@ -1243,7 +1243,7 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
   }
   /* EDIT THESE */
   .completed {
-    height: 100vh;
+    height: 120vh;
   }
   .PROGRESS {
     height: 40vh;

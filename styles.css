@@ -698,7 +698,7 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     z-index: 999999
   }
   .menu {
-    margin-top: 7px;
+    margin-top: 3px;
     margin-left: 5px;
     width: 23px;
     height: 3em;
@@ -708,6 +708,9 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     padding-right: 25px;
     position: relative;
     transform: scale(0.8);
+    background: #212121;
+    border-radius: 5px;
+
   }
   .menu .bit-1::before {
     content: '';

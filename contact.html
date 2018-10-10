@@ -99,7 +99,7 @@
       <div class="scene-element scene_element--slideUp">
 
         <div class=form>
-          <h1 class=title><span class="color-letter">C</span>ontact Me</h1>
+          <h1 class=title>Contact <span style="color:#09d9ff">Me</span></h1>
           <p>
             If you have any questions, or would like me to work for you, don't hesitate to use this form to do so.
           </p>
@@ -387,7 +387,7 @@
     <script type="text/javascript">
       $(document).ready(function() {
         $(".menu").click(function() {
-          $(".nav-expand").slideToggle(700);
+          $(".nav-expand").toggle("slide", { direction: 'right'});
         });
         $(".icon").click(function() {
           $(".nav-expand").slideUp(200);

@@ -694,6 +694,9 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     padding: 0px;
   }
   /* ---------------- NAV ---------------- */
+  nav {
+    z-index: 999999
+  }
   .menu {
     margin-top: 7px;
     margin-left: 5px;
@@ -811,12 +814,12 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     width: calc(100% - 75px);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 60px;
   }
   .nav-logo {
     height: 50px;
-    padding-left: 75px;
+    padding-left: 20px;
   }
   .nav-toggle-div {
     width: 50px;
@@ -828,6 +831,7 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
   }
   .nav-toggle {
     width: 45px;
+    background: white;
   }
   .nav-expand {
     background: white;
@@ -1098,10 +1102,9 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     text-align: center;
     padding: 50px 0 !important;
     color: #FF095A;
-    text-shadow: 3px 0px 0px #09d9ff;
+    font-size: 3em;
   }
   .form h1 {
-    font-size: 34px;
     padding: 70px 0;
   }
   .name {

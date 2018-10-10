@@ -1013,7 +1013,6 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     display: block;
     position: fixed !important;
     overflow: hidden !important;
-    opacity: 1;
     left: -500px;
     top: -250px;
     /*
@@ -1024,7 +1023,7 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     bottom: -350px;
     top: 150px; */
     z-index: -10;
-    opacity: 0.9;
+    opacity: 0.4;
   }
   /* ---------------- ABOUT ---------------- */
   h1 {

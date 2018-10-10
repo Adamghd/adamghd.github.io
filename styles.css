@@ -1238,7 +1238,7 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     overflow: scroll;
     height: 100%;
     margin-top: 60px !important;
-    padding-top: 60px;
+    padding-top: 80px;
   }
   .completed, .PROGRESS {
     width: 100%;

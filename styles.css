@@ -1,3 +1,11 @@
+/* WORK PAGE EDIT */
+.completed {
+  height: 140vh;
+}
+.PROGRESS {
+  height: 40vh;
+}
+
 html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -494,19 +502,12 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
   }
   .completed, .PROGRESS {
     width: 100%;
-    height: auto;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
   }
-  /* EDIT THESE */
-  .completed {
-    height: 120vh;
-  }
-  .PROGRESS {
-    height: 40vh;
-  }
+
   /* ---------- */
   .seperator {
     height: 20px;
@@ -1242,17 +1243,10 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
   }
   .completed, .PROGRESS {
     width: 100%;
-    height: auto;
     display: flex;
     align-items: center;
   }
-  /* EDIT THESE */
-  .completed {
-    height: 120vh;
-  }
-  .PROGRESS {
-    height: 40vh;
-  }
+
   /* ---------- */
   .seperator {
     height: 20px;

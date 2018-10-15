@@ -3,7 +3,6 @@
 <html>
 
 <head>
-
   <title>Adam - Digital Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Web designer, graphic designer, filmmaker, and more. I also do work for clients, feel free to contact me.">
@@ -19,6 +18,8 @@
   <script src="_js/jquery.smoothState.min.js" type="text/javascript"></script>
   <script src="https://github.com/Adamghd/adamghd.github.io/blob/master/_js/lottie.js" type="text/javascript"></script>
   <script src="_js/lottie.js" type="text/javascript"></script>
+  <script src="_js/jquery-ui.min.js" type="text/javascript"></script>
+
 
 </head>
 
@@ -116,7 +117,7 @@
 
 
 
-            <a style="width: 100%;" href="http://uwm.edu/planetarium">
+            <a target=_blank style="width: 100%;" href="http://uwm.edu/planetarium">
               <div class="box">
                 <img class="image" src="_images/work/planetarium.jpg" />
                 <div class="nameplate">
@@ -128,7 +129,7 @@
               </div>
             </a>
 
-            <a style="width: 100%;" href="https://www.youtube.com/watch?v=tiNvKBbs3D0">
+            <a target=_blank style="width: 100%;" href="https://www.youtube.com/watch?v=tiNvKBbs3D0">
               <div class="box">
                 <img class="image" src="_images/work/whydidyou.png" />
                 <div class="nameplate">
@@ -140,7 +141,7 @@
               </div>
             </a>
 
-            <a href="https://zealousadvertising.com" style="width: 100%" target=_blank>
+            <a target=_blank href="https://zealousadvertising.com" style="width: 100%" target=_blank>
               <div class="box">
                 <img class="image" src="_images/work/zealous.png" />
                 <div class="nameplate">
@@ -153,7 +154,7 @@
             </a>
 
 
-            <a style="width: 100%;" href="http://www.twitch.tv/dorian17twf">
+            <a target=_blank style="width: 100%;" href="http://www.twitch.tv/dorian17twf">
               <div class="box">
                 <img class="image" src="_images/work/dorian.jpg" />
                 <div class="nameplate">
@@ -165,13 +166,25 @@
               </div>
             </a>
 
-            <a style="width: 100%;" href="#">
+            <a target=_blank style="width: 100%;" href="https://lsphotos.github.io/lsphotos/">
               <div class="box">
                 <img class="image" src="_images/work/lsphotos.png" />
                 <div class="nameplate">
                   <h1>WEBSITE & LOGO</h1>
                   <p>
                     LSPHOTOS
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <a target=_blank style="width: 100%;" href="http://stallioncreations.com">
+              <div class="box">
+                <img class="image" src="_images/work/stallion.png" />
+                <div class="nameplate">
+                  <h1>WEBSITE</h1>
+                  <p>
+                    STALLION CREATIONS
                   </p>
                 </div>
               </div>
@@ -229,29 +242,31 @@
           <h1>MORE COMING SOON</h1>
           <h3 class=mobile-hide>WANT YOUR OWN WORK?<br /><br /> <a class=work-btn href="contact.html">CONTACT ME</a></h3>
         </div>
+        <script type="text/javascript">
+          $(".menu").click(function() {
+            $(".nav-expand").toggle("slide", {
+              direction: 'right'
+            });
+          });
+          $(".icon").click(function() {
+            $(".nav-expand").slideUp(200);
+          })
+        </script>
 
+        <script type="text/javascript">
+          var menu = document.querySelector('.menu');
+          function toggleMenu() {
+            menu.classList.toggle('open');
+          }
+          menu.addEventListener('click', toggleMenu);
+        </script>
+        <a href="javascript:;" target="_self" style="display: hidden">
     </main>
     </div>
 
+
   </div class="m-scene">
   <!-- nav menu -->
-  <script type="text/javascript">
-    $(".menu").click(function() {
-      $(".nav-expand").slideToggle(700);
-    });
-    $(".icon").click(function() {
-      $(".nav-expand").slideUp(200);
-    })
-  </script>
-
-  <script type="text/javascript">
-    var menu = document.querySelector('.menu');
-
-    function toggleMenu() {
-      menu.classList.toggle('open');
-    }
-    menu.addEventListener('click', toggleMenu);
-  </script>
 
 </body>
 

@@ -502,7 +502,7 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
   }
   /* EDIT THESE */
   .completed {
-    height: 100vh;
+    height: 120vh;
   }
   .PROGRESS {
     height: 40vh;
@@ -694,8 +694,11 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     padding: 0px;
   }
   /* ---------------- NAV ---------------- */
+  nav {
+    z-index: 999999
+  }
   .menu {
-    margin-top: 7px;
+    margin-top: 3px;
     margin-left: 5px;
     width: 23px;
     height: 3em;
@@ -705,6 +708,9 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     padding-right: 25px;
     position: relative;
     transform: scale(0.8);
+    background: #212121;
+    border-radius: 5px;
+
   }
   .menu .bit-1::before {
     content: '';
@@ -811,12 +817,12 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     width: calc(100% - 75px);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 60px;
   }
   .nav-logo {
     height: 50px;
-    padding-left: 75px;
+    padding-left: 20px;
   }
   .nav-toggle-div {
     width: 50px;
@@ -828,6 +834,7 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
   }
   .nav-toggle {
     width: 45px;
+    background: white;
   }
   .nav-expand {
     background: white;
@@ -1009,7 +1016,6 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     display: block;
     position: fixed !important;
     overflow: hidden !important;
-    opacity: 1;
     left: -500px;
     top: -250px;
     /*
@@ -1020,7 +1026,7 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     bottom: -350px;
     top: 150px; */
     z-index: -10;
-    opacity: 0.9;
+    opacity: 0.4;
   }
   /* ---------------- ABOUT ---------------- */
   h1 {
@@ -1098,10 +1104,9 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     text-align: center;
     padding: 50px 0 !important;
     color: #FF095A;
-    text-shadow: 3px 0px 0px #09d9ff;
+    font-size: 3em;
   }
   .form h1 {
-    font-size: 34px;
     padding: 70px 0;
   }
   .name {
@@ -1233,7 +1238,7 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     overflow: scroll;
     height: 100%;
     margin-top: 60px !important;
-    padding-top: 60px;
+    padding-top: 75px;
   }
   .completed, .PROGRESS {
     width: 100%;
@@ -1243,7 +1248,7 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
   }
   /* EDIT THESE */
   .completed {
-    height: 100vh;
+    height: 120vh;
   }
   .PROGRESS {
     height: 40vh;

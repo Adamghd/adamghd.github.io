@@ -14,7 +14,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
   <script src="_js/jquery.smoothState.min.js" type="text/javascript"></script>
   <script src="https://github.com/Adamghd/adamghd.github.io/blob/master/_js/lottie.js" type="text/javascript"></script>
-    <script src="_js/lottie.js" type="text/javascript"></script>
+  <script src="_js/lottie.js" type="text/javascript"></script>
+  <script src="_js/jquery-ui.min.js" type="text/javascript"></script>
+
+
 
 </head>
 
@@ -97,7 +100,7 @@
       <div class="scene-element scene_element--slideUp">
 
         <div class="about-box">
-          <h1 class="title"><img class="logo-letter-sm" src="_images/images/img_1.png" />bout me</h1>
+          <h1 class="title">About <span style="color:#09d9ff">Me</span></h1>
           <p class=blurb>
             It all started with a love for technology. Growing up, I'd spend hours and hours each day on a computer, but high school is where the love for web and graphic work started to bloom. I took my first web design and Photoshop class at the same time and excelled
             in both, using that knowledge in college.<br />
@@ -136,7 +139,7 @@
       <script type="text/javascript">
         $(document).ready(function() {
           $(".menu").click(function() {
-            $(".nav-expand").slideToggle(700);
+            $(".nav-expand").toggle("slide", { direction: 'right'});
           });
         });
       </script>

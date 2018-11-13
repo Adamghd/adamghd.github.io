@@ -1,6 +1,6 @@
 /* WORK PAGE EDIT */
 .completed {
-  height: 140vh;
+  height: 160vh;
 }
 .PROGRESS {
   height: 40vh;
@@ -670,6 +670,27 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
   }
   .desktop-hide {
     display: none;
+  }
+
+  /* FLYERS */
+
+  .flyer, .flyerbox, .flyermain {
+    height: 100%;
+  }
+
+  .flyermain {
+    display: flex;
+    overflow-x: scroll !important;
+    overflow-y: scroll !important;
+    width: auto;
+  }
+
+  .flyerbox {
+    display: flex;
+  }
+  .flyer {
+    width: auto;
+    height: 100%;
   }
 }
 

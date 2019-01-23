@@ -103,9 +103,10 @@
         <div class=form>
           <h1 class=title>Contact <span style="color:#09d9ff">Me</span></h1>
           <p>
-            If you have any questions, or would like me to work for you, don't hesitate to use this form to do so.
+            If you have any questions, or would like me to work for you, please email me at
+            <br /><span style="color: #09d9ff; font-size: 1.5em" >adamgaff@uwm.edu </span><br />with the subject "adamgaff.com".
           </p>
-
+          <!--
           <form class="form1" action="https://formspree.io/adamgaff@uwm.edu" method="POST">
 
             <div class="name-email-div">
@@ -134,11 +135,8 @@
             <br />
 
             <input value="SUBMIT" type="submit" class="submit">
-            <!--
-            <input type="hidden" name="_subject" value="adamgaff.com: New Form Submission" />
-
-            <input type="hidden" name="_next" value="http://www.adamgaff.com/thanks.html" />
-        --></form>
+          </form>
+        -->
 
         </div>
 
@@ -389,7 +387,9 @@
     <script type="text/javascript">
       $(document).ready(function() {
         $(".menu").click(function() {
-          $(".nav-expand").toggle("slide", { direction: 'right'});
+          $(".nav-expand").toggle("slide", {
+            direction: 'right'
+          });
         });
         $(".icon").click(function() {
           $(".nav-expand").slideUp(200);

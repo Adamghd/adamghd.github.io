@@ -324,7 +324,7 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     width: 50%;
     float: right;
     height: 100%;
-    margin-top: 10%
+    margin-top: 20%
   }
   .form h1 {
     font-size: 45px;
@@ -366,7 +366,9 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     font: 16px sans-serif;
     padding-bottom: 10px;
     margin: auto;
-    animation: 1.3s ease-in-out 0s text
+    animation: 1.3s ease-in-out 0s text;
+    font-family: "product-sans";
+    line-height: 1.7em;
   }
   .submit {
     background: none;
@@ -691,6 +693,12 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
   .flyer {
     width: auto;
     height: 100%;
+  }
+  .flyerpopup {
+    z-index: 9999;
+  }
+  .flyerpopup h3 {
+    color: white;
   }
 }
 
@@ -1115,7 +1123,8 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
   .form {
     margin: auto;
     margin-left: 2px;
-    margin-top: 50px;
+    margin-top: 25%;
+    margin-bottom: 25%;
     text-align: center;
     width: 100%;
     height: auto;
@@ -1190,6 +1199,8 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     font-size: 13px;
     padding-bottom: 10px;
     margin: auto;
+    line-height: 2em;
+    font-family: "product-sans"
   }
   .submit {
     animation: 0.8s ease-in-out 0s submit;
@@ -1428,4 +1439,34 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     transform: scale(1.1);
     transition: 0.3s;
   } */
+  /* FLYERS */
+
+  .flyer, .flyerbox, .flyermain {
+    height: 100%;
+  }
+
+  .flyersmain {
+    height: 50%;
+  }
+
+  .flyermain {
+    display: flex;
+    overflow-x: scroll !important;
+    overflow-y: scroll !important;
+    width: auto;
+  }
+
+  .flyerbox {
+    display: flex;
+  }
+  .flyer {
+    width: auto;
+    height: 100%;
+  }
+  .flyerpopup {
+    z-index: 9999;
+  }
+  .flyerpopup h3 {
+    color: white;
+  }
 }

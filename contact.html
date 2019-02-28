@@ -24,7 +24,7 @@
   <div id="main" class="m-scene">
     <!-- MOBILE NAV -->
 
-    <nav class="bug-nav2 desktop-hide">
+    <nav class="desktop-hide">
       <div class="top-nav">
         <div class="nav-logo-div">
           <img class="nav-logo" src="_images/images/img_0.png" />
@@ -37,16 +37,22 @@
       </div>
       <div class="nav-expand">
         <div class="nav-expand-text">
-          <a href="index.html"><i data-fa-transform="grow-5"class="icon fas fa-home"></i>
-            <p class="desc">HOME</p></a>
-          <a href="work.html"><i data-fa-transform="grow-5"class="icon fas fa-desktop"></i>
-            <p class="desc">WORK</p></a>
-          <a href="about.html"><i data-fa-transform="grow-5"class="icon fas fa-user"></i>
-            <p class="desc">ABOUT</p></a>
-          <a href="contact.html"><i data-fa-transform="grow-5"class="icon fas fa-envelope"></i>
-            <p class="desc">CONTACT</p></a> </div>
+          <a href="index.html">
+            <h1>Home</h1>
+          </a>
+          <a href="work.html">
+            <h1>Work</h1>
+          </a>
+          <a href="about.html">
+            <h1>About</h1>
+          </a>
+          <a href="contact.html">
+            <h1>Contact</h1>
+          </a>
+        </div>
       </div>
     </nav>
+
 
     <!-- DESKTOP NAV -->
 
@@ -388,7 +394,8 @@
       $(document).ready(function() {
         $(".menu").click(function() {
           $(".nav-expand").toggle("slide", {
-            direction: 'right'
+            direction: 'up',
+            duration: 600
           });
         });
         $(".icon").click(function() {

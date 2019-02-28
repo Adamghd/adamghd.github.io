@@ -38,14 +38,19 @@
       </div>
       <div class="nav-expand">
         <div class="nav-expand-text">
-          <a href="index.html"><i data-fa-transform="grow-5"class="icon fas fa-home"></i>
-            <p class="desc">HOME</p></a>
-          <a href="work.html"><i data-fa-transform="grow-5"class="icon fas fa-desktop"></i>
-            <p class="desc">WORK</p></a>
-          <a href="about.html"><i data-fa-transform="grow-5"class="icon fas fa-user"></i>
-            <p class="desc">ABOUT</p></a>
-          <a href="contact.html"><i data-fa-transform="grow-5"class="icon fas fa-envelope"></i>
-            <p class="desc">CONTACT</p></a> </div>
+          <a href="index.html">
+            <h1>Home</h1>
+          </a>
+          <a href="work.html">
+            <h1>Work</h1>
+          </a>
+          <a href="about.html">
+            <h1>About</h1>
+          </a>
+          <a href="contact.html">
+            <h1>Contact</h1>
+          </a>
+        </div>
       </div>
     </nav>
 
@@ -80,21 +85,21 @@
           </div>
         </div>
 
-    <div class="social">
-      <ul>
-        <li>
-          <a target=_blank href="https://twitter.com/adam_gaff"><i class="fab fa-twitter"></i></a>
-        </li>
-        <li>
-          <a target=_blank href="https://www.youtube.com/channel/UCYYgyQP0xRDeGNJLWRCoIjA?view_as=subscriber"><i class="fab fa-youtube"></i></a>
-        </li>
-        <li>
-          <a target=_blank href="https://instagram.com/adamg_hd"><i class="fab fa-instagram"></i></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  </nav>
+        <div class="social">
+          <ul>
+            <li>
+              <a target=_blank href="https://twitter.com/adam_gaff"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a target=_blank href="https://www.youtube.com/channel/UCYYgyQP0xRDeGNJLWRCoIjA?view_as=subscriber"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+              <a target=_blank href="https://instagram.com/adamg_hd"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <main>
       <div class="scene-element scene_element--slideUp">
@@ -139,7 +144,10 @@
       <script type="text/javascript">
         $(document).ready(function() {
           $(".menu").click(function() {
-            $(".nav-expand").toggle("slide", { direction: 'right'});
+            $(".nav-expand").toggle("slide", {
+              direction: 'up',
+              duration: 600
+            });
           });
         });
       </script>

@@ -40,14 +40,19 @@
       </div>
       <div class="nav-expand">
         <div class="nav-expand-text">
-          <a href="index.html"><i data-fa-transform="grow-5"class="icon fas fa-home"></i>
-            <p class="desc">HOME</p></a>
-          <a href="work.html"><i data-fa-transform="grow-5"class="icon fas fa-desktop"></i>
-            <p class="desc">WORK</p></a>
-          <a href="about.html"><i data-fa-transform="grow-5"class="icon fas fa-user"></i>
-            <p class="desc">ABOUT</p></a>
-          <a href="contact.html"><i data-fa-transform="grow-5"class="icon fas fa-envelope"></i>
-            <p class="desc">CONTACT</p></a> </div>
+          <a id=here href="">
+            <h1>Home</h1>
+          </a>
+          <a href="work.html">
+            <h1>Work</h1>
+          </a>
+          <a href="about.html">
+            <h1>About</h1>
+          </a>
+          <a href="contact.html">
+            <h1>Contact</h1>
+          </a>
+        </div>
       </div>
     </nav>
 
@@ -82,26 +87,26 @@
           </div>
         </div>
 
-    <div class="social">
-      <ul>
-        <li>
-          <a target=_blank href="https://twitter.com/adam_gaff"><i class="fab fa-twitter"></i></a>
-        </li>
-        <li>
-          <a target=_blank href="https://www.youtube.com/channel/UCYYgyQP0xRDeGNJLWRCoIjA?view_as=subscriber"><i class="fab fa-youtube"></i></a>
-        </li>
-        <li>
-          <a target=_blank href="https://instagram.com/adamg_hd"><i class="fab fa-instagram"></i></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  </nav>
+        <div class="social">
+          <ul>
+            <li>
+              <a target=_blank href="https://twitter.com/adam_gaff"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a target=_blank href="https://www.youtube.com/channel/UCYYgyQP0xRDeGNJLWRCoIjA?view_as=subscriber"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+              <a target=_blank href="https://instagram.com/adamg_hd"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  <main>
-    <div class="scene-element scene_element--slideUp">
-      <div class="text">
-        <h1><span class='letter'>H</span><span class='letter'>i</span><span class='letter'>,</span>
+    <main>
+      <div class="scene-element scene_element--slideUp">
+        <div class="text">
+          <h1><span class='letter'>H</span><span class='letter'>i</span><span class='letter'>,</span>
         <br />
         <span class='letter'>I</span><span class='letter'>'</span><span class='letter'>m&nbsp;</span>
         <span class="letter"><img src="_images/images/img_1.png" class="logo-letter" /></span><span class='letter'>d</span><span class='letter'>a</span><span class='letter'>m</span><span class='letter'>,</span>
@@ -109,58 +114,67 @@
         <span class='letter'> p</span><span class='letter'>r</span><span class='letter'>o</span><span class='letter'>d</span><span class='letter'>u</span><span class='letter'>c</span><span class='letter'>t </span>
         <span class='letter'>d</span><span class='letter'>e</span><span class='letter'>v</span><span class='letter'>e</span><span class='letter'>l</span><span class='letter'>o</span><span class='letter'>p</span><span class='letter'>e</span><span class='letter'>r</span></h1>
 
-        <h3 class="text-child">Web designer / Graphics / Filmmaker / <a href="work.html">More</a> /</h3>
-        <a class="contact-btn" href="contact.html"><h3>CONTACT ME</h3></a>
+          <h3 class="text-child">Web designer / Graphics / Filmmaker / <a href="work.html">More</a> /</h3>
+          <a class="contact-btn" href="contact.html"><h3>CONTACT ME</h3></a>
+        </div>
+
+        <div id=bm>
+        </div>
+
       </div>
+    </main>
 
-      <div id=bm>
-      </div>
-
-    </div>
-  </main>
-
-  <script src="_js/lottie.js" type="text/javascript"></script>
-  <script type="text/javascript">
-    lottie.loadAnimation({
-      container: document.getElementById("bm"), // the dom element that will contain the animation
-      renderer: 'svg',
-      loop: false,
-      autoplay: true,
-      path: '_images/data.json' // the path to the animation json
-    });
-  </script>
-    
-  <script type="text/javascript">
-    $(".letter").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function() {
-      $(this).removeClass("letter-animate")
-    })
-
-    $(".letter").hover(function() {
-      $(this).addClass("letter-animate");
-    })
-  </script>
-  <script type="text/javascript" src="_js/ss.js"></script>
-
-  <!-- nav menu -->
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $(".menu").click(function() {
-        $(".nav-expand").toggle("slide", { direction: 'right'});
+    <script src="_js/lottie.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      lottie.loadAnimation({
+        container: document.getElementById("bm"), // the dom element that will contain the animation
+        renderer: 'svg',
+        loop: false,
+        autoplay: true,
+        path: '_images/data.json' // the path to the animation json
       });
-      $(".icon").click(function() {
-        $(".nav-expand").slideUp(200);
+    </script>
+
+    <script type="text/javascript">
+      $(".letter").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function() {
+        $(this).removeClass("letter-animate")
       })
-    });
-  </script>
 
-  <script type="text/javascript">
-    var menu = document.querySelector('.menu');
+      $(".letter").hover(function() {
+        $(this).addClass("letter-animate");
+      })
+    </script>
+    <script type="text/javascript" src="_js/ss.js"></script>
 
-    function toggleMenu() {
-      menu.classList.toggle('open');
-    }
-    menu.addEventListener('click', toggleMenu);
-  </script>
+    <!-- nav menu -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".menu").click(function() {
+          $(".nav-expand").toggle("slide", {
+            direction: 'up',
+            duration: 600
+          });
+        });
+        $(".here").click(function() {
+          $(".nav-expand").toggle("slide", {
+            direction: 'up',
+            duration: 600
+          });
+        });
+        $(".icon").click(function() {
+          $(".nav-expand").slideUp(300);
+        })
+      });
+    </script>
+
+    <script type="text/javascript">
+      var menu = document.querySelector('.menu');
+
+      function toggleMenu() {
+        menu.classList.toggle('open');
+      }
+      menu.addEventListener('click', toggleMenu);
+    </script>
 
   </div>
 </body>

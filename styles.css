@@ -728,7 +728,7 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     z-index: 999999
   }
   .menu {
-    margin-top: 3px;
+    margin-top: 20px;
     margin-left: 5px;
     width: 23px;
     height: 3em;
@@ -738,7 +738,7 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     padding-right: 25px;
     position: relative;
     transform: scale(0.8);
-    background: #212121;
+    background: none;
     border-radius: 5px;
 
   }
@@ -752,6 +752,7 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     height: 0.3em;
     background: #09d9ff;
     transition: transform 0.3s, top 0.3s;
+    border-radius: 5px 0 0 5px;
   }
   .menu .bit-1::after {
     content: '';
@@ -763,6 +764,7 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     height: 0.3em;
     background: #09d9ff;
     transition: transform 0.3s, top 0.3s;
+    border-radius: 0px 10px 10px 0px;
   }
   .menu .bit-2 {
     position: absolute;
@@ -773,6 +775,8 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     background: #09d9ff;
     transform: translate(-50%, -50%);
     transition: transform 0.3s 0.3s, width 0.3s 0.6s;
+    border-radius: 5px;
+
   }
   .menu .bit-3::before {
     content: '';
@@ -784,6 +788,8 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     height: 0.3em;
     background: #09d9ff;
     transition: transform 0.3s, bottom 0.3s;
+    border-radius: 10px 0px 0px 10px;
+
   }
   .menu .bit-3::after {
     content: '';
@@ -795,6 +801,8 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     height: 0.3em;
     background: #09d9ff;
     transition: transform 0.3s, bottom 0.3s;
+    border-radius: 0px 10px 10px 0px;
+
   }
   .menu.open .bit-1:before {
     top: 0.4em;
@@ -840,7 +848,7 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     align-items: center;
     width: 100%;
     display: flex;
-    background: #0f0f0f;
+    background: none;
     z-index: 1001101010;
   }
   .nav-logo-div {
@@ -848,11 +856,11 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 60px;
+    height: 80px;
   }
   .nav-logo {
-    height: 50px;
-    padding-left: 20px;
+    height: 60px;
+    padding: 20px 0 0 20px;
   }
   .nav-toggle-div {
     width: 50px;
@@ -867,26 +875,18 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     background: white;
   }
   .nav-expand {
-    background: white;
+    background: #272727;
     display: none;
-    margin-top: 60px;
     position: fixed;
     z-index: 100;
     width: 100%;
+    height: 100vh;
   }
   .nav-expand-text {
-    height: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     padding: 20px;
-    text-align: center;
-    background: #0f0f0f;
-  }
-  .nav-expand-text a {
-    transform: scale(1.4);
-    padding: 10px 30px;
-    margin-top: -10px;
+    padding-top: 80px;
   }
   .bug-nav {
     margin-top: -60px;
@@ -897,71 +897,24 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     z-index: 123123123123
   }
   body {
-    background-color: #141414;
+    background-color: #212121;
     overflow-y: scroll;
     overflow-x: hidden;
     z-index: -10;
   }
-  nav a {
-    color: #414141;
-    transition: 0.2s;
-  }
-  nav a:active {
-    color: #09d9ff;
-    transition: 0.2s;
-  }
   .mobile-hide {
     display: none;
-  }
-  .icon-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 100%;
-    height: 100%;
-  }
-  .logo-name {
-    padding: 10px 0;
-    width: 20%;
-    background-color: #070707;
-    z-index: 4;
   }
   nav h4 {
     padding-top: 3px;
     font-size: 11px;
   }
-  .icons ul {
-    display: flex;
-    align-items: center;
-    margin: auto;
-    height: 100%;
+  nav a, nav h1 {
     width: 100%;
-  }
-
-  .icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    padding: 0px 0px;
-    color: #414141;
-  }
-  .social {
-    display: none;
-    /* Hide social icons */
-    z-index: 9999;
-    width: 30%;
-    padding: 22px 0px;
-    color: #414141;
-    text-align: right;
-  }
-  .social ul li {
-    padding: 10px 5px;
-  }
-  .desc {
-    display: none;
+    font-size: 50px;
+    margin: 7px 0;
+    color: white;
+    font-weight: 100;
   }
   /* ---------------- INDEX ---------------- */
   .text {
@@ -971,10 +924,10 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     height: auto;
     position: absolute;
     color: white;
-    font-size: 30px;
-    letter-spacing: -3px;
+    font-size: 27px;
+    letter-spacing: -1px;
     line-height: 70px;
-    top: 45px;
+    top: 60px;
     text-align: left;
     padding: 20px 20px 0 20px;
   }
@@ -992,7 +945,7 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     z-index: 1;
   }
   .contact-btn {
-    background: #141414;
+    background: #212121;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -1043,7 +996,7 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
     width: 300%;
     height: 1000px;
     background-color: #141414;
-    display: block;
+    display: none;
     position: fixed !important;
     overflow: hidden !important;
     left: -500px;

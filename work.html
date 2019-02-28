@@ -28,7 +28,7 @@
 
     <!-- MOBILE NAV -->
 
-    <nav class="desktop-hide bug-nav">
+    <nav class="desktop-hide">
       <div class="top-nav">
         <div class="nav-logo-div">
           <img class="nav-logo" src="_images/images/img_0.png" />
@@ -41,14 +41,19 @@
       </div>
       <div class="nav-expand">
         <div class="nav-expand-text">
-          <a href="index.html"><i data-fa-transform="grow-5"class="icon fas fa-home"></i>
-            <p class="desc">HOME</p></a>
-          <a href="work.html"><i data-fa-transform="grow-5"class="icon fas fa-desktop"></i>
-            <p class="desc">WORK</p></a>
-          <a href="about.html"><i data-fa-transform="grow-5"class="icon fas fa-user"></i>
-            <p class="desc">ABOUT</p></a>
-          <a href="contact.html"><i data-fa-transform="grow-5"class="icon fas fa-envelope"></i>
-            <p class="desc">CONTACT</p></a> </div>
+          <a href="index.html">
+            <h1>Home</h1>
+          </a>
+          <a href="work.html">
+            <h1>Work</h1>
+          </a>
+          <a href="about.html">
+            <h1>About</h1>
+          </a>
+          <a href="contact.html">
+            <h1>Contact</h1>
+          </a>
+        </div>
       </div>
     </nav>
 
@@ -265,31 +270,33 @@
           <h1>MORE COMING SOON</h1>
           <h3 class=mobile-hide>WANT YOUR OWN WORK?<br /><br /> <a class=work-btn href="contact.html">CONTACT ME</a></h3>
         </div>
-        <script type="text/javascript">
-          $(".menu").click(function() {
-            $(".nav-expand").toggle("slide", {
-              direction: 'right'
-            });
-          });
-          $(".icon").click(function() {
-            $(".nav-expand").slideUp(200);
-          })
-        </script>
-
-        <script type="text/javascript">
-          var menu = document.querySelector('.menu');
-          function toggleMenu() {
-            menu.classList.toggle('open');
-          }
-          menu.addEventListener('click', toggleMenu);
-        </script>
-        <a href="javascript:;" target="_self" style="display: hidden">
     </main>
     </div>
 
+    <!-- nav menu -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".menu").click(function() {
+          $(".nav-expand").toggle("slide", {
+            direction: 'up',
+            duration: 600
+          });
+        });
+        $(".icon").click(function() {
+          $(".nav-expand").slideUp(300);
+        })
+      });
+    </script>
 
-  </div class="m-scene">
-  <!-- nav menu -->
+    <script type="text/javascript">
+      var menu = document.querySelector('.menu');
+
+      function toggleMenu() {
+        menu.classList.toggle('open');
+      }
+      menu.addEventListener('click', toggleMenu);
+    </script>
+
 
 </body>
 

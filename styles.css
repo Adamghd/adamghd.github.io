@@ -32,6 +32,10 @@ body::-webkit-scrollbar {
   width: 0 !important
 }
 
+main {
+  padding-top: calc(176px);
+}
+
 html, body {
   margin: 0px;
   height: 100%;
@@ -49,6 +53,9 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 2.5%;
+  position: fixed;
+  background: white;
+  transition: 0.2s;
 }
 
 .heading {

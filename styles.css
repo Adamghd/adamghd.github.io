@@ -33,8 +33,7 @@ body::-webkit-scrollbar {
 }
 
 main {
-  /* padding-top: calc(5% + 110px); */
-  padding-top: calc(20%);
+  padding-top: calc(5% + 110px);
   background: #F8F8F8;
 }
 
@@ -54,10 +53,11 @@ nav {
   width: 95%;
   justify-content: center;
   align-items: center;
+  padding: 2.5%;
   position: fixed;
-  background: white;
-  transition: 0.6s;
-  padding: 25% 2.5%;
+  background: #F8F8F8;
+  transition: 0.2s;
+
 }
 
 .heading {
@@ -128,7 +128,7 @@ nav {
 }
 
 .show .overlay-links {
-  width: 25%;
+  width: 20%;
   height: 100%;
   background: #F8F8F8;
   display: flex;
@@ -138,7 +138,7 @@ nav {
 }
 
 .show .overlay-profile {
-  width: 25%;
+  width: 20%;
   height: 100%;
   background: #FFF;
   animation: overlay-profile 0.5s;
@@ -190,7 +190,7 @@ nav {
 }
 
 .overlay-profile {
-  width: 25%;
+  width: 20%;
   height: 100%;
   background: #FFF;
   display: flex;
@@ -228,7 +228,7 @@ nav {
 }
 
 .overlay-links {
-  width: 25%;
+  width: 20%;
   height: 100%;
   background: #F8F8F8;
   display: flex;
@@ -404,7 +404,7 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  margin-bottom: 5%;
+  padding-bottom: 5%;
 }
 
 .card {

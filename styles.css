@@ -33,7 +33,7 @@ body::-webkit-scrollbar {
 }
 
 main {
-  padding-top: calc(176px);
+  padding-top: calc(5% + 110px);
 }
 
 html, body {
@@ -56,6 +56,7 @@ nav {
   position: fixed;
   background: white;
   transition: 0.2s;
+
 }
 
 .heading {
@@ -333,7 +334,6 @@ nav {
 
 /* closed */
 .circle {
-  background: white;
   border: black 3px solid;
   height: 50px;
   width: 50px;

@@ -16,6 +16,8 @@
   <!-- Top bar  -->
   <nav>
     <!-- Eye nav button -->
+    <div class="glass">
+    </div>
     <div class="eye" onclick="menu(this)">
       <div class="circle">
         <div class="line">
@@ -270,6 +272,7 @@
       if ($(window).scrollTop() >= 100) {
         $('#logo').css('display', 'none');
         $('nav').css('padding', '0 2.5%');
+        $('nav').css('background', '#FFFDE2');
         //Otherwise remove inline styles and thereby revert to original stying
       } else {
         $('nav').attr('style', '');

@@ -16,8 +16,6 @@
   <!-- Top bar  -->
   <nav>
     <!-- Eye nav button -->
-    <div class="glass">
-    </div>
     <div class="eye" onclick="menu(this)">
       <div class="circle">
         <div class="line">
@@ -32,18 +30,18 @@
     </div>
     <!-- Social Media -->
     <div class="social-links">
-      <a href="" target=_blank class="social-bubble">
-        <img src="images/" alt="">
+      <a href="https://www.instagram.com/astrobeebe/" target=_blank class="social-bubble">
+        <img src="images/instagram.png" alt="">
       </a>
       <a href="" target=_blank class="social-bubble">
-        <img src="images/" alt="">
+        <img src="images/email.png" alt="">
       </a>
-      <a href="" target=_blank class="social-bubble">
-        <img src="images/" alt="">
+      <a href="https://mediamilwaukee.com/author/aebeebeuwm-edu" target=_blank class="social-bubble">
+        <img src="images/pen.png" alt="">
       </a>
     </div>
 
-    <div class="overlay" id=overlay >
+    <div class="overlay" id="overlay">
       <div class="overlay1">
         <div class="overlay-links">
           <div class="overlay-text">
@@ -55,19 +53,20 @@
 
         <div class="overlay-profile">
           <div class="overlay-profile-flex">
-            <img src="images/star.jpg" alt="">
+            <div class="overlay-profile-img">
+            </div>
             <h1 class="heading">Allison Beebe</h1>
             <p>Fun little mini bio. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <div class="overlay-social-links">
-              <a href="" target=_blank class="social-bubble">
-                <img src="images/" alt="">
+              <a href="https://www.instagram.com/astrobeebe/" target=_blank class="social-bubble">
+                <img src="images/instagram.png" alt="">
               </a>
               <a href="" target=_blank class="social-bubble">
-                <img src="images/" alt="">
+                <img src="images/email.png" alt="">
               </a>
-              <a href="" target=_blank class="social-bubble">
-                <img src="images/" alt="">
+              <a href="https://mediamilwaukee.com/author/aebeebeuwm-edu" target=_blank class="social-bubble">
+                <img src="images/pen.png" alt="">
               </a>
             </div>
           </div>
@@ -229,18 +228,20 @@
 
 
   <script>
-    $(overlay).hide();
+    var overlayx = document.getElementById("overlay");
+    $(overlayx).hide();
 
     function menu(x) {
       x.classList.toggle("change");
-      var overlay = document.getElementById("overlay");
-      overlay.classList.toggle("show");
-      $(overlay).show();
+      var overlayx = document.getElementById("overlay");
+      overlayx.classList.toggle("show");
+      $(overlayx).show();
       $('body').toggleClass('stop-scrolling');
     }
 
     function overlay(x) {
       menu(x);
+      $(overlayx).show();
     }
 
     $(window).scroll(function() {

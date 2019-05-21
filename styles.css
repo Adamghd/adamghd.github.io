@@ -238,10 +238,15 @@ nav {
   color: #888;
 }
 
-.overlay-profile-flex img {
+.overlay-profile-img {
   height: 150px;
   width: 150px;
   border-radius: 75px;
+  overflow: hidden !important;
+  margin: auto;
+  background: url(images/prof.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .overlay-links {
@@ -277,7 +282,7 @@ nav {
   border: 0;
   border-radius: 100%;
   background: #999;
-  transform: scale(0.6);
+  transform: scale(0.6) rotate(345deg);
   margin: -4px;
 }
 

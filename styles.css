@@ -107,6 +107,7 @@
       filter: blur(90px);
     }
   }
+
   .show .overlay-right {
     width: 60%;
     height: 100%;
@@ -117,6 +118,7 @@
     animation-fill-mode: forwards;
     z-index: 0;
   }
+
   .show .overlay1 {
     position: fixed;
     height: 100%;
@@ -129,6 +131,7 @@
     display: flex;
     animation: overlay 0.5s;
   }
+
   .show .overlay-links {
     width: 20%;
     height: 100%;
@@ -138,12 +141,14 @@
     animation: overlay-links 0.5s;
     z-index: 0;
   }
+
   .show .overlay-profile {
     width: 20%;
     height: 100%;
     background: #FFF;
     animation: overlay-profile 0.5s;
   }
+
   .overlay-text {
     font-family: "mermaid";
     font-size: 1.5em;
@@ -151,6 +156,7 @@
     margin-top: 18vh;
     line-height: 3em;
   }
+
   @keyframes overlay-hide {
     0% {
       display: none;
@@ -172,6 +178,7 @@
       opacity: 0;
     }
   }
+
   .overlay1 {
     position: fixed;
     height: 100%;
@@ -185,6 +192,7 @@
     animation: overlay-hide 1.5s;
     animation-fill-mode: forwards;
   }
+
   .overlay-profile {
     width: 20%;
     height: 100%;
@@ -192,11 +200,13 @@
     display: flex;
     justify-content: center;
   }
+
   .overlay-profile-flex {
     margin-top: 15vh;
     width: 75%;
     text-align: center;
   }
+
   .overlay-profile-flex h1 {
     width: 100%;
     text-align: center;
@@ -204,6 +214,7 @@
     font-size: 1.5em;
     margin: 3vh 0;
   }
+
   .overlay-profile-flex p {
     width: 80%;
     text-align: center;
@@ -213,6 +224,7 @@
     line-height: 1.3em;
     color: #888;
   }
+
   .overlay-profile-img {
     height: 150px;
     width: 150px;
@@ -223,6 +235,7 @@
     background-position: center;
     background-size: cover;
   }
+
   .overlay-links {
     width: 20%;
     height: 100%;
@@ -231,21 +244,25 @@
     justify-content: center;
     z-index: 3;
   }
+
   .overlay-text a {
     color: black;
     text-decoration: none;
   }
+
   .overlay-social-links {
     width: 100%;
     margin-top: 3vh;
     display: flex;
     justify-content: center;
   }
+
   .social-links {
     width: 20%;
     display: flex;
     justify-content: flex-end;
   }
+
   .social-bubble {
     width: 50px;
     height: 50px;
@@ -254,11 +271,13 @@
     transform: scale(0.6) rotate(345deg);
     margin: -4px;
   }
+
   .social-bubble img {
     width: 100%;
     height: 100%;
     border-radius: 100%;
   }
+
   /* eye animation */
   @keyframes circle {
     0% {
@@ -269,6 +288,7 @@
       border-radius: 0px 25px 0 25px;
     }
   }
+
   @keyframes circle-close {
     100% {
       border-radius: 25px 25px 25px 25px;
@@ -278,6 +298,7 @@
       border-radius: 0px 25px 0 25px;
     }
   }
+
   @keyframes line {
     0% {
       height: 0px;
@@ -293,6 +314,7 @@
       border-radius: 100%;
     }
   }
+
   @keyframes line-close {
     100% {
       height: 0px;
@@ -308,6 +330,7 @@
       border-radius: 100%;
     }
   }
+
   .eye {
     display: flex;
     flex-wrap: nowrap;
@@ -317,6 +340,7 @@
     transform: scale(0.6);
     justify-content: flex-start;
   }
+
   /* closed */
   .circle {
     border: black 3px solid;
@@ -329,6 +353,7 @@
     animation: circle-close 0.3s;
     cursor: pointer;
   }
+
   .line {
     height: 0px;
     width: 25px;
@@ -341,6 +366,7 @@
     justify-content: center;
     animation: line-close .2s;
   }
+
   .pupil {
     height: 10px;
     width: 10px;
@@ -348,6 +374,7 @@
     background: black;
     display: none;
   }
+
   /* open */
   .change .circle {
     background: white;
@@ -359,6 +386,7 @@
     justify-content: center;
     animation: circle 0.3s;
   }
+
   .change .line {
     height: 25px;
     width: 25px;
@@ -367,6 +395,7 @@
     border-radius: 100%;
     animation: line 0.2s;
   }
+
   .change .pupil {
     display: block;
     height: 10px;
@@ -375,6 +404,7 @@
     background: black;
     display: block;
   }
+
   .card-main {
     width: 100%;
     padding: 0% 0%;
@@ -384,12 +414,14 @@
     align-items: flex-start;
     padding-bottom: 5%;
   }
+
   .card {
     width: 300px;
     margin: 0 1%;
     text-decoration: none;
     color: black;
   }
+
   .card-img {
     width: 300px;
     height: 300px;
@@ -400,13 +432,16 @@
     align-items: center;
     overflow: hidden;
   }
+
   .card i {
     color: #999;
   }
+
   .card-img img {
     width: 300px;
     height: auto;
   }
+
   .card-text {
     display: flex;
     flex-wrap: wrap;
@@ -414,17 +449,20 @@
     align-items: center;
     text-align: center;
   }
+
   .card-header {
     color: #8F8F8F;
     font-size: 16px;
     font-family: "worksans", sans-serif;
     letter-spacing: 0.05em;
   }
+
   .card-title {
     font-size: 32px;
     margin: 0px;
     font-family: "mermaid"
   }
+
   .card-blurb {
     color: #8F8F8F;
     font-size: 18px;
@@ -432,6 +470,7 @@
     width: 80%;
     text-align: center;
   }
+
   footer {
     height: 25vh;
     background: #DCDCDC;
@@ -442,9 +481,11 @@
     align-items: center;
     text-align: center;
   }
+
   .footer-text {
     width: 100%;
   }
+
   footer h2 a {
     margin: 0 6%;
     font-size: 0.8em;
@@ -452,11 +493,13 @@
     text-decoration: none;
     font-family: "mermaid";
   }
+
   footer p {
     font-size: 0.8em;
     color: #555;
     font-family: "worksans";
   }
+
   footer a {
     color: #444;
     text-decoration: none;
@@ -465,11 +508,15 @@
 }
 
 /* -/-/-/-/-/-/-/-/-/-/ MOBILE \-\-\-\-\-\-\-\-\-\-\- */
-
 @media screen and (max-width: 999px) {
   .stop-scrolling {
     height: 100%;
     overflow-y: hidden !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    /*reset for mobile browsers */
+    font-weight: normal;
   }
 
   body::-webkit-scrollbar {
@@ -491,7 +538,6 @@
     -ms-user-select: none;
     user-select: none;
   }
-
 
   @keyframes overlay-links {
     0% {
@@ -520,14 +566,13 @@
       background: rgba(255, 255, 255, 0);
     }
 
-    100% {
-
-    }
+    100% {}
   }
 
   .show .overlay-right {
     display: none;
   }
+
   .show .overlay1 {
     position: fixed;
     height: 100%;
@@ -541,6 +586,7 @@
     flex-wrap: wrap;
     animation: overlay 0.5s;
   }
+
   .show .overlay-links {
     width: 100%;
     height: 30%;
@@ -550,6 +596,7 @@
     animation: overlay-links 0.5s;
     z-index: 0;
   }
+
   .show .overlay-profile {
     width: 100%;
     height: 70%;
@@ -558,6 +605,7 @@
     justify-content: center;
     animation: overlay-profile 0.5s;
   }
+
   .overlay-text {
     display: flex;
     flex-wrap: wrap;
@@ -569,9 +617,11 @@
     margin: 3rem;
     line-height: 2em;
   }
+
   .overlay-text a {
     width: 100%;
   }
+
   @keyframes overlay-hide {
     0% {
       display: none;
@@ -593,6 +643,7 @@
       opacity: 0;
     }
   }
+
   .overlay1 {
     position: fixed;
     height: 100%;
@@ -608,6 +659,7 @@
     animation: overlay-hide 1.5s;
     animation-fill-mode: forwards;
   }
+
   .overlay-profile {
     width: 100%;
     height: 70%;
@@ -615,11 +667,13 @@
     display: flex;
     justify-content: center;
   }
+
   .overlay-profile-flex {
     margin-top: 5vh;
     width: 75%;
     text-align: center;
   }
+
   .overlay-profile-flex h1 {
     width: 100%;
     text-align: center;
@@ -627,6 +681,7 @@
     font-size: 5em;
     margin: 3vh 0;
   }
+
   .overlay-profile-flex p {
     width: 80%;
     text-align: center;
@@ -636,6 +691,7 @@
     line-height: 1.3em;
     color: #888;
   }
+
   .overlay-profile-img {
     height: 40vw;
     width: 40vw;
@@ -646,6 +702,7 @@
     background-position: center;
     background-size: cover;
   }
+
   .overlay-links {
     width: 100%;
     height: 30%;
@@ -654,16 +711,19 @@
     justify-content: center;
     z-index: 3;
   }
+
   .overlay-text a {
     color: black;
     text-decoration: none;
   }
+
   .overlay-social-links {
     width: 100%;
     margin-top: 3vh;
     display: flex;
     justify-content: center;
   }
+
   .social-bubble {
     display: none;
     width: 15vw;
@@ -673,11 +733,13 @@
     transform: scale(0.6) rotate(345deg);
     margin: -4px;
   }
+
   .social-bubble img {
     width: 100%;
     height: 100%;
     border-radius: 100%;
   }
+
   /* eye animation */
   @keyframes circle {
     0% {
@@ -688,6 +750,7 @@
       border-radius: 0px 25px 0 25px;
     }
   }
+
   @keyframes circle-close {
     100% {
       border-radius: 25px 25px 25px 25px;
@@ -697,6 +760,7 @@
       border-radius: 0px 25px 0 25px;
     }
   }
+
   @keyframes line {
     0% {
       height: 0px;
@@ -712,6 +776,7 @@
       border-radius: 100%;
     }
   }
+
   @keyframes line-close {
     100% {
       height: 0px;
@@ -727,6 +792,7 @@
       border-radius: 100%;
     }
   }
+
   nav {
     display: flex;
     width: 100%;
@@ -757,6 +823,7 @@
     transform: scale(1.7);
     justify-content: center;
   }
+
   /* closed */
   .circle {
     border: black 3px solid;
@@ -769,6 +836,7 @@
     animation: circle-close 0.3s;
     cursor: pointer;
   }
+
   .line {
     height: 0px;
     width: 25px;
@@ -781,6 +849,7 @@
     justify-content: center;
     animation: line-close .2s;
   }
+
   .pupil {
     height: 10px;
     width: 10px;
@@ -788,6 +857,7 @@
     background: black;
     display: none;
   }
+
   /* open */
   .change .circle {
     background: white;
@@ -799,6 +869,7 @@
     justify-content: center;
     animation: circle 0.3s;
   }
+
   .change .line {
     height: 25px;
     width: 25px;
@@ -807,6 +878,7 @@
     border-radius: 100%;
     animation: line 0.2s;
   }
+
   .change .pupil {
     display: block;
     height: 10px;
@@ -815,6 +887,7 @@
     background: black;
     display: block;
   }
+
   .card-main {
     width: 100%;
     padding: 5% 0%;
@@ -825,12 +898,14 @@
     padding-top: 25vw;
     padding-bottom: 15vw;
   }
+
   .card {
     width: 90%;
     text-decoration: none;
     color: black;
     margin-top: 10vw;
   }
+
   .card-img {
     width: 100%;
     margin: 0 !important;
@@ -842,14 +917,17 @@
     align-items: center;
     overflow: hidden;
   }
+
   .card i {
     color: #999;
   }
+
   .card-img img {
     width: 100%;
     margin: 0;
     height: auto;
   }
+
   .card-text {
     display: flex;
     flex-wrap: wrap;
@@ -857,6 +935,7 @@
     align-items: center;
     text-align: center;
   }
+
   .card-header {
     color: #8F8F8F;
     font-size: 3em;
@@ -864,12 +943,14 @@
     letter-spacing: 0.05em;
     margin: 1vh;
   }
+
   .card-title {
     font-size: 7em;
     margin: 0px;
     line-height: 1.2em;
     font-family: "mermaid"
   }
+
   .card-blurb {
     color: #8F8F8F;
     font-size: 3em;
@@ -877,6 +958,7 @@
     width: 100%;
     text-align: center;
   }
+
   footer {
     height: 125vw;
     background: #F8F8F8;
@@ -887,6 +969,7 @@
     align-items: center;
     text-align: center;
   }
+
   .footer-text {
     padding: 15vw 0;
     width: 100%;
@@ -896,12 +979,14 @@
     justify-content: center;
     align-items: center;
   }
+
   footer h2 {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     line-height: 10vh;
   }
+
   footer h2 a {
     width: 100%;
     margin: 0 3%;
@@ -910,11 +995,13 @@
     text-decoration: none;
     font-family: "mermaid";
   }
+
   footer p {
     font-size: 2em;
     color: #555;
     font-family: "worksans";
   }
+
   footer a {
     color: #444;
     text-decoration: none;

@@ -59,20 +59,20 @@
             <p>Fun little mini bio. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <div class="overlay-social-links">
-              <a href="https://www.instagram.com/astrobeebe/" target=_blank class="social-bubble">
+              <a href="https://www.instagram.com/astrobeebe/" target=_blank class="social-bubble" style="display: flex;">
                 <img src="images/instagram.png" alt="">
               </a>
-              <a href="" target=_blank class="social-bubble">
+              <a href="" target=_blank class="social-bubble" style="display: flex;">
                 <img src="images/email.png" alt="">
               </a>
-              <a href="https://mediamilwaukee.com/author/aebeebeuwm-edu" target=_blank class="social-bubble">
+              <a href="https://mediamilwaukee.com/author/aebeebeuwm-edu" target=_blank class="social-bubble" style="display: flex;">
                 <img src="images/pen.png" alt="">
               </a>
             </div>
           </div>
         </div>
 
-        <div class="overlay-right" onclick="overlay(this)">
+        <div class="overlay-right" onclick="menu(this)">
         </div>
       </div>
     </div>
@@ -218,6 +218,7 @@
 
 
   <footer>
+    <hr class=desktop-hide style="width: 80%; color: black; border: 1px solid black;">
     <div class="footer-text">
       <h2><a href="#">About Me</a><a href="#">Media Milwaukee</a><a href="#">Featured Stories</a><a href="#">Contact</a></h2><br>
       <p>Built with <a target=_blank href="https://adamgaff.com">Adam Gaff</a></p>
@@ -237,11 +238,6 @@
       overlayx.classList.toggle("show");
       $(overlayx).show();
       $('body').toggleClass('stop-scrolling');
-    }
-
-    function overlay(x) {
-      menu(x);
-      $(overlayx).show();
     }
 
     $(window).scroll(function() {

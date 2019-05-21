@@ -492,28 +492,6 @@
     user-select: none;
   }
 
-  nav {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 2.5%;
-    position: fixed;
-    background: #F8F8F8;
-    transition: 0.2s;
-  }
-
-  .heading {
-    width: 60%;
-    height: 16vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 20px;
-    font-family: "marigold";
-    font-size: 3em;
-  }
 
   @keyframes overlay-links {
     0% {
@@ -686,11 +664,6 @@
     display: flex;
     justify-content: center;
   }
-  .social-links {
-    width: 20%;
-    display: flex;
-    justify-content: flex-end;
-  }
   .social-bubble {
     display: none;
     width: 15vw;
@@ -754,13 +727,34 @@
       border-radius: 100%;
     }
   }
+  nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5%;
+    position: fixed;
+    background: #F8F8F8;
+    transition: 0.2s;
+  }
+
+  .heading {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-top: 20px;
+    font-family: "marigold";
+    font-size: 4em;
+  }
+
   .eye {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     width: 20%;
     z-index: 10101010;
-    transform: scale(1.2);
+    transform: scale(1.7);
     justify-content: center;
   }
   /* closed */
@@ -828,17 +822,18 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
+    padding-top: 25vw;
     padding-bottom: 15vw;
   }
   .card {
     width: 70vw;
-    margin: 0 1%;
+    margin: 3% 5%;
     text-decoration: none;
     color: black;
   }
   .card-img {
     width: 70vw;
-    height: 70vw;
+    height: auto;
     background: ;
     border: 0px solid black;
     display: flex;
@@ -862,20 +857,22 @@
   }
   .card-header {
     color: #8F8F8F;
-    font-size: 2em;
+    font-size: 3em;
     font-family: "worksans", sans-serif;
     letter-spacing: 0.05em;
+    margin: 1vh;
   }
   .card-title {
-    font-size: 5em;
+    font-size: 7em;
     margin: 0px;
+    line-height: 1.2em;
     font-family: "mermaid"
   }
   .card-blurb {
     color: #8F8F8F;
-    font-size: 2em;
+    font-size: 3em;
     font-family: "worksans", sans-serif;
-    width: 80%;
+    width: 100%;
     text-align: center;
   }
   footer {

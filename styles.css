@@ -826,13 +826,14 @@
     padding-bottom: 15vw;
   }
   .card {
-    width: 70vw;
-    margin: 3% 5%;
+    width: 90%;
     text-decoration: none;
     color: black;
+    margin-top: 10vw;
   }
   .card-img {
-    width: 70vw;
+    width: 100%;
+    margin: 0 !important;
     height: auto;
     background: ;
     border: 0px solid black;
@@ -845,7 +846,8 @@
     color: #999;
   }
   .card-img img {
-    width: 70vw;
+    width: 100%;
+    margin: 0;
     height: auto;
   }
   .card-text {

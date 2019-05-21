@@ -92,11 +92,18 @@ nav {
 @keyframes overlay {
   0% {
     background: rgba(255, 255, 255, 0);
-    filter: blur(3px);
   }
-
   100% {
-    background: rgba(255, 255, 255, 0.6);
+
+  }
+}
+@keyframes overlay-right {
+  0% {
+    background: rgba(255, 255, 255, 0);
+    filter: blur(90px);
+  }
+  100% {
+    filter: blur(90px);
   }
 }
 
@@ -116,13 +123,14 @@ nav {
 .show .overlay-right {
   width: 60%;
   height: 100%;
-  background: #F8F8F8;
   display: flex;
-  justify-content: center;
-  animation: overlay-links 0.5s;
-  z-index: 0;
   background: rgba(255, 255, 255, 0.6);
+  justify-content: center;
+  animation: overlay-right 0.5s;
+  animation-fill-mode: forwards;
+  z-index: 0;
 }
+
 
 .show .overlay1 {
   position: fixed;

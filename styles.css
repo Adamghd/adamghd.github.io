@@ -23,7 +23,7 @@
   src: url(fonts/Mermaid1001.ttf);
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 321px) {
   .stop-scrolling {
     height: 100%;
     overflow-y: hidden !important;
@@ -473,7 +473,7 @@
 
   footer {
     height: 25vh;
-    background: #DCDCDC;
+    background: #F8F8F8;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -508,7 +508,7 @@
 }
 
 /* -/-/-/-/-/-/-/-/-/-/ MOBILE \-\-\-\-\-\-\-\-\-\-\- */
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 320px) {
   .stop-scrolling {
     height: 100%;
     overflow-y: hidden !important;

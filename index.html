@@ -43,70 +43,42 @@
       </a>
     </div>
 
-      <div class="overlay" id=overlay>
-        <div class="overlay1">
-          <div class="overlay-links">
-            <div class="overlay-text">
-              <a href="#">About Me</a><br>
-              <a href="#">Featured Articles</a><br>
-              <a href="#">Contact Me</a>
-            </div>
+    <div class="overlay" id=overlay >
+      <div class="overlay1">
+        <div class="overlay-links">
+          <div class="overlay-text">
+            <a href="#">About Me</a><br>
+            <a href="#">Featured Articles</a><br>
+            <a href="#">Contact Me</a>
           </div>
+        </div>
 
-          <div class="overlay-profile">
-            <div class="overlay-profile-flex">
-              <img src="images/star.jpg" alt="">
-              <h1 class="heading">Allison Beebe</h1>
-              <p>Fun little mini bio. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <div class="overlay-social-links">
-                <a href="" target=_blank class="social-bubble">
-                  <img src="images/" alt="">
-                </a>
-                <a href="" target=_blank class="social-bubble">
-                  <img src="images/" alt="">
-                </a>
-                <a href="" target=_blank class="social-bubble">
-                  <img src="images/" alt="">
-                </a>
-              </div>
+        <div class="overlay-profile">
+          <div class="overlay-profile-flex">
+            <img src="images/star.jpg" alt="">
+            <h1 class="heading">Allison Beebe</h1>
+            <p>Fun little mini bio. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="overlay-social-links">
+              <a href="" target=_blank class="social-bubble">
+                <img src="images/" alt="">
+              </a>
+              <a href="" target=_blank class="social-bubble">
+                <img src="images/" alt="">
+              </a>
+              <a href="" target=_blank class="social-bubble">
+                <img src="images/" alt="">
+              </a>
             </div>
           </div>
         </div>
-      </div>
-  </nav>
+        <div class="overlay-right" onclick="overlay(this)">
 
-  <div class="overlay" id=overlay>
-    <div class="overlay1">
-      <div class="overlay-links">
-        <div class="overlay-text">
-          <a href="#">About Me</a><br>
-          <a href="#">Featured Articles</a><br>
-          <a href="#">Contact Me</a>
-        </div>
-      </div>
-
-      <div class="overlay-profile">
-        <div class="overlay-profile-flex">
-          <img src="images/star.jpg" alt="">
-          <h1 class="heading">Allison Beebe</h1>
-          <p>Fun little mini bio. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <div class="overlay-social-links">
-            <a href="" target=_blank class="social-bubble">
-              <img src="images/" alt="">
-            </a>
-            <a href="" target=_blank class="social-bubble">
-              <img src="images/" alt="">
-            </a>
-            <a href="" target=_blank class="social-bubble">
-              <img src="images/" alt="">
-            </a>
-          </div>
         </div>
       </div>
     </div>
-  </div>
+  </nav>
+
 
   <main>
     <div class="card-main">
@@ -228,7 +200,7 @@
         </div>
       </a>
 
-      <a href="https://mediamilwaukee.com/opinion/neil-degrasse-tyson-sexual-assault-accusations" target=_blank class="card">
+      <a href="https://mediamilwaukee.com/features/feature-stories/uw-milwaukee-manfred-olson-planetarium" target=_blank class="card">
         <div>
           <div class="card-img">
             <img src="images/planet.jpg" alt="">
@@ -267,6 +239,10 @@
       $('body').toggleClass('stop-scrolling');
     }
 
+    function overlay() {
+      menu();
+    }
+
     $(window).scroll(function() {
       //After scrolling 100px from the top...
       if ($(window).scrollTop() >= 100) {
@@ -278,6 +254,11 @@
         $('nav').attr('style', '');
       }
     });
+  </script>
+  <script>
+  function overlay(x) {
+    menu(x);
+  }
   </script>
 
 

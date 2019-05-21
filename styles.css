@@ -514,8 +514,9 @@
     overflow-y: hidden !important;
   }
 
-  h1, h2, h3, h4, h5, h6, p, a, {
-    font-weight: normal !important;
+  h1, h2, h3, h4, h5, h6 {
+    /*reset for mobile browsers */
+    font-weight: normal;
   }
 
   body::-webkit-scrollbar {
@@ -697,7 +698,7 @@
     border-radius: 20vw;
     overflow: hidden !important;
     margin: auto;
-    background: url(images/PROF.png);
+    background: url(images/prof.png);
     background-position: center;
     background-size: cover;
   }
